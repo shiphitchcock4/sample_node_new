@@ -16,7 +16,7 @@ env:
     - secure: M7mHHXcOM3b5vpruafumJ6agyy0zYuceGBvBAF2qdAclCvMRRUIdTP3aHMBoSNQJ7CWMKuzomHxrQGjezbvy6dnbf4yyT5c80GEwyIesUEhzmJHR/oHA4kAPOWmtJNVGoeJaYI7F1z8fosVg7/eLu668WEPaIKBMi7272YduwvI5WLZefH7XxBE0qW98l6lBi/Ad1QU4FmIviHHx2oa4DOP/cjInl8Cvmxtx3uvy9amGTVFmhmxPdkDbCkgr4xp9Sa/MZ87I87Yazf93rfW7fgmBL461ifX8c+BSiKE5OW9Z31A5v4kTwkXkKsxisMmIkVJUetZ1DElvEfvx2ssYWA==
     - GOO=GUBU
   
-
+ 
 build:
   ci:
     - node --version
