@@ -28,6 +28,7 @@ build:
     - ls -al
 
   post_ci:
+    - docker build -t=quay.io/shippablequay/hitchcock2_sample_nodequay .
     - docker push quay.io/shippablequay/hitchcock2_sample_nodequay
 
 integrations:
