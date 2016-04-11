@@ -38,8 +38,8 @@ integrations:
   hub:
     - integrationName: ship-docker
       type: docker   
-  #  - integrationName: ship-quay
-   #   type: quay.io
+    - integrationName: ship-quay
+      type: quay.io
 
 
    
