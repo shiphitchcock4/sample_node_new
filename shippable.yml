@@ -46,7 +46,7 @@ integrations:
       type: docker   
     #-integrationName: ship-quay
      #type: quay.io 
-           
+            
     
   
     
