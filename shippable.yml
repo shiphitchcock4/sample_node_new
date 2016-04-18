@@ -30,7 +30,7 @@ build:
     - node --version
     - ps -eax
     - ls -al 
-    - tghr
+  
 
   post_ci:
    # - docker build -t=shippabledocker/shiphitchcock4samplenod .
