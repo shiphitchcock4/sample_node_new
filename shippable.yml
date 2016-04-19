@@ -35,15 +35,15 @@ build:
   post_ci:
     - docker build -t=shippabledocker/shiphitchcock4_sample_nodepr .
     - docker push shippabledocker/shiphitchcock4_sample_nodepr
-   # - docker build -t=quay.io/shippablequay/hitchcock2_sample_nodequay .
-    #- docker push quay.io/shippablequay/hitchcock2_sample_nodequay
+    - docker build -t=quay.io/shippablequay/hitchcock2_sample_nodequay .
+    - docker push quay.io/shippablequay/hitchcock2_sample_nodequay
 
 integrations:
   hub:
     - integrationName: ship-docker
       type: docker   
-    #-integrationName: ship-quay
-     #type: quay.io  
+    - integrationName: ship-quay
+      type: quay.io  
 
    
    
