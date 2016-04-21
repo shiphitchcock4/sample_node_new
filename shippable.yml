@@ -27,7 +27,7 @@ build:
   ci:  
     - ps -eax
     - ls -al
-    - thgfd
+  
 
     #- if [ "$SHIPPABLE_node_js_VERSION" == "0.10" ]; then foobar; fi
  
