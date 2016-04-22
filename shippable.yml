@@ -38,4 +38,4 @@ integrations:
       type: private docker registry 
       #branches:
        # except:
-        #  - pdr
+        #  - pdr 
