@@ -28,7 +28,7 @@ build:
     - ls -al
 
   post_ci:
-    - docker push quay.io/shippablequay/hitchcock2_sample_nodequay1
+    - docker push quay.io/shippablequay/hitchcock2_sample_nodequay1:$BRANCH.$BUILD_NUMBER
 
 integrations:
   hub:
