@@ -14,7 +14,7 @@ node_js:
 
 build:
   pre_ci:
-    - docker build -t=quay.io/shippablequay/hitchcock2_sample_nodequay .
+    - docker build -t=quay.io/shippablequay/hitchcock2_sample_nodequay1 .
 
   pre_ci_boot:
     image_name: quay.io/shippablequay/hitchcock2_sample_nodequay
@@ -28,7 +28,7 @@ build:
     - ls -al
 
   post_ci:
-    - docker push quay.io/shippablequay/hitchcock2_sample_nodequay
+    - docker push quay.io/shippablequay/hitchcock2_sample_nodequay1
 
 integrations:
   hub:
