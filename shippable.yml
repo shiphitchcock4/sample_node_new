@@ -13,10 +13,10 @@ node_js:
  
 build:
  # pre_ci:
-  #  - docker build --rm -t=480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1 .
+  #  - docker build --rm -t=480971114143.dkr.ecr.us-east-1.amazonaws.com/hitchcock1 .
 
   pre_ci_boot:
-    image_name: 480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1
+    image_name: 480971114143.dkr.ecr.us-east-1.amazonaws.com/hitchcock1
     image_tag: latest
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
@@ -28,9 +28,9 @@ build:
 
 
   post_ci:
-    - docker build --rm -t=480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1:tip2 .
-    - docker tag -f 480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1:latest 480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1:tip2
-    - docker push 480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1:tip2
+    - docker build --rm -t=480971114143.dkr.ecr.us-east-1.amazonaws.com/hitchcock1:tip1 .
+    - docker tag -f 480971114143.dkr.ecr.us-east-1.amazonaws.com/hitchcock1:latest 480971114143.dkr.ecr.us-east-1.amazonaws.com/hitchcock1:tip2
+    - docker push 480971114143.dkr.ecr.us-east-1.amazonaws.com/hitchcock1:tip2
 
   smoke_test:
     - sudo ls /
@@ -48,7 +48,7 @@ integrations:
       #branches:
        # except:
         #  - ecr-pre
-            
+             
            
     
   
