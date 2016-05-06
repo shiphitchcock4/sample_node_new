@@ -38,7 +38,7 @@ build:
 deploy:
   pre_build:
     - ls
-    - ls -al
+    - ls -al 
 
 
 integrations:
