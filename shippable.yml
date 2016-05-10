@@ -43,7 +43,7 @@ build:
 
 integrations:
   hub:
-    - integrationName: ship-docker
+    - integrationName: ship4-docker
       type: docker
       
   notifications:
