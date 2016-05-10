@@ -19,13 +19,13 @@ env:
     - M1=ONE
 
 build:
-  pre_ci:
-    - docker build -t=shiphitchcock4/hitchcock4_sample_node .  
+  #pre_ci:
+   # - docker build -t=shiphitchcock4/hitchcock4_sample_node .  
 
   pre_ci_boot:
     image_name: shiphitchcock4/hitchcock4_sample_node
     image_tag: latest
-    pull: false
+    pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
   ci:  
@@ -39,7 +39,7 @@ build:
   
  
   post_ci:
-    - docker push shiphitchcock4/hitchcock4_sample_node
+    - docker push shiphitchcock4/hitchcock4_sample_node1
 
 integrations:
   hub:
