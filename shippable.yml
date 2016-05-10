@@ -20,10 +20,10 @@ env:
 
 build:
   pre_ci:
-    - docker build -t=shippabledocker/hitchcock4_sample_node .  
+    - docker build -t=shiphitchcock4/hitchcock4_sample_node .  
 
   pre_ci_boot:
-    image_name: shippabledocker/hitchcock4_sample_node
+    image_name: shiphitchcock4/hitchcock4_sample_node
     image_tag: latest
     pull: false
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
