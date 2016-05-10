@@ -39,7 +39,7 @@ build:
   
  
   post_ci:
-    - docker push shiphitchcock4/hitchcock4_sample_node1
+    - docker push shiphitchcock4/hitchcock4_sample_node
 
 integrations:
   hub:
