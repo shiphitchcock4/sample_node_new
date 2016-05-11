@@ -20,7 +20,7 @@ env:
 
 build:
   pre_ci:
-    - docker build -t=shiphitchcock4r/hitchcock4_sample_node1 .  
+    - docker build -t=shiphitchcock4/hitchcock4_sample_node1 .  
 
   pre_ci_boot:
     image_name: shiphitchcock4/hitchcock4_sample_node
