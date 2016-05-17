@@ -24,7 +24,7 @@ build:
     - node --version
     - echo $FOO
     - echo $M1    
-    #- echo $SOO  
+    #- echo $SOO      
     - echo "$FO%&O"
     - echo "$FO&O"
     
