@@ -33,7 +33,7 @@ build:
     - ls -al
     - if [ "$SHIPPABLE_NODE_JS_VERSION" == "0.12" ]; then foobar; fi
     
-  cache: true
+
    
  
 
@@ -42,57 +42,10 @@ build:
  
   post_ci:
     - docker push shiphitchcock4/hitchcock4_sample_node
+  cache: true
 
 integrations:
   hub:
     - integrationName: ship4-docker
       type: docker
-      
-  notifications:
-    - integrationName: ship_slack
-      type: slack
-      recipients:
-        - "#random" 
-        - "#public-chnl" 
-      on_start: always
-      on_success: always
-      on_failure: always
-      
-    - integrationName: "ship-slack1"
-      type: slack
-      on_failure: always
-      on_start: always
-      on_success: always
-      recipients:
-        - "#general"
-      
-    - integrationName: email      
-      type: email   
-      recipients: 
-          - sreyaj10@gmail.com
-          - sreya@shippable.com
-      on_start: always
-      on_success: always 
-      on_failure: always 
-     
-    - integrationName: irc   
-      type: irc
-      recipients:
-        - "chat.freenode.net#test-irc"
-        - "chat.freenode.net#test1-irc"
-      on_start: always
-      on_success: always      
-      on_failure: always   
-         
-    - integrationName: ship-hipchat
-      type: hipchat
-      recipients:
-        - '#testing'
-     # - '#Pillar%20of%20Autumn' 
-        - '@shiphitchcock4'
-      on_start: always
-      on_success: always         
-      on_failure: always       
-      #on_pull_request: always                                         
-     
-       
+ 
