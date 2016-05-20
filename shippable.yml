@@ -35,7 +35,7 @@ integrations:
         - "#general"
       
     - integrationName: email      
-      type: email   
+      type: email    
       recipients: 
           - sreyaj10@gmail.com
           - sreya@shippable.com
