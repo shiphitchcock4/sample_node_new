@@ -21,7 +21,7 @@ build:
     - docker build -t=shiphitchcock4/hitchcock4_sample_nodenew .   
 
   pre_ci_boot:
-    image_name: drydock/nodpls
+    image_name: drydock/u12nodpls
     image_tag: prod
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
