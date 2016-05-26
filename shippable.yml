@@ -16,12 +16,13 @@ node_js:
   
 build:
  # cache: true
-  #pre_ci:
+  pre_ci:
    # - docker build -t=shippabledocker/shiphitchcock2_sample_node2 .
+    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenew .   
 
   pre_ci_boot:
-    image_name: shippabledocker/shiphitchcock2_sample_node2
-    image_tag: latest
+    image_name: drydock/nodpls
+    image_tag: prod
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
@@ -37,8 +38,10 @@ build:
     #- docker push shippabledocker/shiphitchcock4samplenod
    # - docker build -t=quay.io/shippablequay/hitchcock2_sample_nodequay .
     #- docker push quay.io/shippablequay/hitchcock2_sample_nodequay
-    - docker build -t=shippabledocker/shiphitchcock4samplenod:$BRANCH.$BUILD_NUMBER .
-    - docker push shippabledocker/shiphitchcock4samplenod:$BRANCH.$BUILD_NUMBER
+    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenew:$BRANCH.$BUILD_NUMBER .
+    - docker push shiphitchcock4/hitchcock4_sample_nodenew
+   # - docker build -t=shippabledocker/shiphitchcock4samplenod:$BRANCH.$BUILD_NUMBER .
+    #- docker push shippabledocker/shiphitchcock4samplenod:$BRANCH.$BUILD_NUMBER
 
 integrations:
   hub:
