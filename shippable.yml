@@ -32,7 +32,7 @@ build:
  
   #post_ci:
    # - docker push shiphitchcock4/hitchcock4_sample_nodenew
-  cache: false  
+  cache: true 
 
 integrations:
   #hub:
