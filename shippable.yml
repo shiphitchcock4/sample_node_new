@@ -10,8 +10,8 @@ node_js:
  # - iojs-v1    
  # - iojs-v2   
 
-  matrix:
-    - M1=ONE
+ # matrix:
+  #  - M1=ONE
 
 build:
  # pre_ci:
