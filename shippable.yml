@@ -24,15 +24,14 @@ build:
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
  
   ci:  
-    - ps -eax
-    - ls -al
-    - if [ "$SHIPPABLE_NODE_JS_VERSION" == "0.12" ]; then foobar; fi
-    #- sleep 7000
+    - sudo docker ps -a
+    - sudo docker run -d shipimg/u14nod
+    - sudo docker run -d shipimg/u14nodall
+    - sleep 5m
   
  
   #post_ci:
    # - docker push shiphitchcock4/hitchcock4_sample_nodenew
-  cache: true 
 
 integrations:
   #hub:
