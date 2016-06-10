@@ -24,9 +24,10 @@ build:
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
  
   ci:  
-    - sudo docker ps -a
+    - sudo docker ps
     - sudo docker run -d drydock/u14nod:prod
     - sudo docker run -d drydock/u14nodall:prod
+    - sudo docker ps
     - sleep 5m
   
  
