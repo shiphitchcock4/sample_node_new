@@ -27,6 +27,7 @@ build:
     - sudo docker ps
     - sudo docker run -d drydock/u14nod:prod
     - sudo docker run -d drydock/u14nodall:prod
+    - sleep 1m
     - sudo docker ps
     - sleep 5m
   
