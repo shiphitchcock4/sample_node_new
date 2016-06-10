@@ -25,8 +25,8 @@ build:
  
   ci:  
     - sudo docker ps -a
-    - sudo docker run -d shipimg/u14nod:prod
-    - sudo docker run -d shipimg/u14nodall:prod
+    - sudo docker run -d drydock/u14nod:prod
+    - sudo docker run -d drydock/u14nodall:prod
     - sleep 5m
   
  
