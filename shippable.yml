@@ -18,7 +18,7 @@ env:
     - GOO=GUBU
     - FO&O=FUBU
   
- 
+  
 build:
   ci:
     - node --version
