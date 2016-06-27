@@ -23,13 +23,14 @@ build:
     pull: false
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
  
-  ci:  
-    - sudo docker ps
-    - sudo docker run -d drydock/u14nod:prod
-    - sudo docker run -d drydock/u14nodall:prod
-    - sleep 1m
-    - sudo docker ps
-    - sleep 5m
+  ci:
+    - node --version
+   # - sudo docker ps
+   # - sudo docker run -d drydock/u14nod:prod
+   # - sudo docker run -d drydock/u14nodall:prod
+   # - sleep 1m
+   # - sudo docker ps
+   # - sleep 5m
   
  
   #post_ci:
