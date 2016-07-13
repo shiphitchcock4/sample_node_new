@@ -16,10 +16,12 @@ env:
 
 build:
   pre_ci:
-    - docker build -t=shippabledocker/hitchcock4_sample_node21new .  
+    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenew .  
+    - docker ps
+    - docker ps -a
 
   pre_ci_boot:
-    image_name: shippabledocker/hitchcock4_sample_node21new
+    image_name: shiphitchcock4/hitchcock4_sample_nodenew
     image_tag: latest
     pull: false
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
@@ -27,52 +29,18 @@ build:
   ci:  
     - ps -eax
     - ls -al
+    - docker ps
+    - docker ps -a
 
 
     #- if [ "$SHIPPABLE_node_js_VERSION" == "0.10" ]; then foobar; fi
  
   post_ci: 
-    - docker push shippabledocker/hitchcock4_sample_node21new
+    - docker push shiphitchcock4/hitchcock4_sample_nodenew
+    - docker ps
+    - docker ps -a
 
-integrations:
-  hub:
-    - integrationName: ship-docker
-      type: docker
-      
-  notifications:
-    - integrationName: ship_slack
-      type: slack
-      recipients:
-        - "#random" 
-        - "#public-chnl" 
-      #on_start: always
-      #on_success: never
-      #on_failure: always
-      
-    - integrationName: "ship-slack1"
-      type: slack
-      #on_failure: always
-      #on_start: always
-      #on_success: never
-      recipients:
-        - "#general"
-      
-    - integrationName: email      
-      type: email   
-      recipients: 
-          - sreyaj10@gmail.com
-          - sreya@shippable.com
-      #on_start: always
-      #on_success: never
-      #on_failure: always 
-    
-    - integrationName: irc   
-      type: irc
-      recipients:
-        - "chat.freenode.net#test-irc"
-        - "chat.freenode.net#test1-irc"
-    #  on_start: always
-     # on_success: always      
-     # on_failure: always             
+
+   
            
       
