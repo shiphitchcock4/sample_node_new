@@ -39,6 +39,11 @@ build:
     - docker push shiphitchcock4/hitchcock4_sample_nodenew
     - docker ps
     - docker ps -a
+    
+integrations:
+  hub:
+    - integrationName: ship4-docker
+      type: docker
 
 
    
