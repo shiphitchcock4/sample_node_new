@@ -12,7 +12,7 @@ env:
     - FOO=FUBU  
 
   matrix:
-    - M1=ONE
+    - M1=ONE 
 
 build:
   pre_ci:
