@@ -27,6 +27,7 @@ build:
     - ps -eax
     #- shippable_cache_container
     - ls -al
+    - sleep 9m
     
   cache: false 
   #cache_dir_list: 
