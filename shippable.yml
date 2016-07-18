@@ -13,4 +13,4 @@ node_js:
 build:     
   ci: 
     - node --version
-    - sleep 7m
+    - sleep 9m
