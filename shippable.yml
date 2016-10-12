@@ -2,8 +2,8 @@ language: node_js
 # Version number
 node_js:
   - 0.10
-  - 0.12
-  - 4.2.3
+ # - 0.12
+  #- 4.2.3
   #- iojs-v1
   #- iojs-v2
   #- iojs-v3
@@ -24,9 +24,9 @@ env:
     #- sre=sru
 matrix:    
   include:
-    - node_js: "899"
-      #env: 
-       # - bar=foo
+    - node_js: "0.12"
+      env: 
+        - bar1=foo1
    #   env: ship@=test
    # - node_js: "0.10"
     #  env: ship@=test
