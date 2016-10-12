@@ -20,6 +20,7 @@ env:
     - GOO=GUBU
     - secure: ZiVXA9z/7gCZPnN+sN/g+v7x6Y8fGfnku+iN6oGzeGA04TJWPf1hUYMhd1oMCTQ5VH00nbgD5jj8OnwfanbVtZGypE0oafMwJ4fKIPo/1Lwv/0uOMitvc31xLORFmjUWQeLIPnXiFyp9el9WXg27Oc+/S+8f/vZqibM75oJS/tCeLhyWfzgcZsxg+x/reUrl+iUMrwjo1GNyqoYBMrE3WwMttsSrWILhqbRB9FjAp1zIyqVoPpR2ipc0S8zvs+2e9mZ2nHBv5QUi88O01lSaGVcBRAYHGW4i/ugmNgTJgLmNyEbTYkeAcMIQIKt/zeRQlopG2KdqTbcuMM1j68Exkw==
     - FO&O=FUBU
+    - sre=sru
   
   
 build:
@@ -36,7 +37,7 @@ build:
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
   post_ci:
-    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage:test .
+    #- docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage:test .
     - docker push shiphitchcock4/hitchcock4_sample_nodenewimage:test
 
     
