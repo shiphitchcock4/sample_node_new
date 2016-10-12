@@ -28,9 +28,9 @@ env:
     #- FO&O=FUBU
     #- sre=sru
     include:
-    - node_js: "0.10"
-      #env: 
-       # - bar=foo
+      - node_js: "0.10"
+        env: 
+          - bar=foo
     #  env: ship@=test
     #- node_js: "0.12"
      # env: ship@=test
