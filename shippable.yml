@@ -13,42 +13,16 @@ node_js:
 branches:
   only:
    # - branch
-    - master    
+    - sreya   
   
   
 build:
 
 
-  pre_ci:
-    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
-
-  pre_ci_boot:
-    image_name: drydock/u12nod
-    image_tag: prod
-    pull: true  
-  #pre_ci_boot:
-   # image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
-   # image_tag: test
-   # pull: true
-   # options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
-    
-  post_ci:
-    #- docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
-    - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
 
     
     
   ci: 
     - node --version
-    - echo $FOO
-    - echo $M1
-    - echo $rc
-    - echo $rc1
-    #- echo $SOO      
-    - echo "$FO%&O"   
-    - echo "$FO&O"
-integrations:
-  hub:
-    - integrationName: ship4-docker
-      type: docker
+   
             
