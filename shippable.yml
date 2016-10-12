@@ -27,11 +27,11 @@ matrix:
     - node_js: "899"
       #env: 
        # - bar=foo
-     # env: ship@=test
+      env: ship@=test
     #- node_js: "0.10"
      # env: ship@=test
-  #allow_failures:
-   # - node_js: 899
+  allow_failures:
+    - node_js: 899
     #- node_js: 0.12
 #branches:
  # only:
