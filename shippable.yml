@@ -10,15 +10,15 @@ node_js:
   #- iojs-v3 
  
 
-branches:
-  except:
-    - master  
-  
+
   
 build:
 
 
-
+  pre_ci_boot:
+    image_name: drydock/u12nod
+    image_tag: prod
+    pull: true 
     
     
   ci: 
