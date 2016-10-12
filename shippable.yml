@@ -1,4 +1,4 @@
-language: none
+language: node_js
 # Version number
 node_js:
   - 0.10
@@ -24,7 +24,8 @@ build:
   ci:
     - node --version
     - echo $FOO
-    - echo $M1    
+    - echo $M1
+    - echo $rc
     #- echo $SOO      
     - echo "$FO%&O"   
     - echo "$FO&O"
