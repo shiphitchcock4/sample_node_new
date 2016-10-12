@@ -48,5 +48,9 @@ build:
     #- echo $SOO      
     - echo "$FO%&O"   
     - echo "$FO&O"
-     
+integrations:
+  hub:
+    - integrationName: ship4-docker
+      type: docker
+          
   
