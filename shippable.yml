@@ -36,7 +36,7 @@ build:
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
   post_ci:
-    - docker build -t=shippabledocker/hitchcock4_sample_node:test .
+    - docker build -t=shippabledocker/hitchcock4_sample_nodenewimage:test .
     - docker push shiphitchcock4/hitchcock4_sample_nodenewimage:test
 
     
