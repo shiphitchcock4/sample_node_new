@@ -21,6 +21,13 @@ env:
   
   
 build:
+
+
+  pre_ci_boot:
+    image_name: drydock/u12nod
+    image_tag: prod
+    pull: true  
+    
   ci:
     - node --version
     - echo $FOO
