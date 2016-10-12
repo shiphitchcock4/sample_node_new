@@ -25,15 +25,15 @@ env:
 build:
 
 
-  #pre_ci_boot:
-   # image_name: drydock/u12nod
-   # image_tag: prod
-   # pull: true  
   pre_ci_boot:
-    image_name: shiphitchcock4/hitchcock4_sample_nodenew
-    image_tag: latest
-    pull: true
-    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+    image_name: drydock/u12nod
+    image_tag: prod
+    pull: true  
+  #pre_ci_boot:
+   # image_name: shiphitchcock4/hitchcock4_sample_nodenew
+   # image_tag: latest
+   # pull: true
+   # options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
   post_ci:
     - docker push shiphitchcock4/hitchcock4_sample_nodenew
