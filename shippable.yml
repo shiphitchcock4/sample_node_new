@@ -24,6 +24,9 @@ env:
 matrix:    
   include:
     - node_js: "0.12"
+      env: 
+        - foo=bar
+        - new=n1
    #   env: ship@=test
     - node_js: "0.10"
     #  env: ship@=test
