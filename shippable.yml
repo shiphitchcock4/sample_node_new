@@ -24,15 +24,15 @@ env:
     #- sre=sru
 matrix:    
   include:
-    #- node_js: "0.12"
+    - node_js: "0.12"
       #env: 
        # - bar=foo
-   #   env: ship@=test
+      env: ship@=test
     - node_js: "0.10"
       env: ship@=test
   allow_failures:
     - node_js: 0.10
-   # - node_js: 0.12
+    - node_js: 0.12
 #branches:
  # only:
    # - branch
