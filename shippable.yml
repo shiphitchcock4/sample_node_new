@@ -44,7 +44,7 @@ build:
  #   image_tag: prod
  #   pull: true  
   pre_ci_boot:
-    image_name: shiphitchcock4/hitchcock4_sample_nodenew
+    image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
     image_tag: latest
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
