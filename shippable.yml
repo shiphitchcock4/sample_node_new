@@ -11,9 +11,9 @@ node_js:
  
 
 branches:
-  only:
+  exclude:
    # - branch
-    - sreya   
+    - master  
   
   
 build:
