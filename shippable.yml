@@ -25,8 +25,8 @@ env:
 matrix:    
   exclude:
     - node_js: "0.12"
-      env: 
-        - bar=foo
+      #env: 
+       # - bar=foo
    #   env: ship@=test
     #- node_js: "0.10"
     #  env: ship@=test
@@ -42,10 +42,10 @@ matrix:
 build:
 
 
-  #pre_ci_boot:
-   # image_name: drydock/u12nod
-   # image_tag: prod
-   # pull: true  
+  pre_ci_boot:
+    image_name: drydock/u12nod
+    image_tag: prod
+    pull: true  
  # pre_ci_boot:
   #  image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
    # image_tag: test
