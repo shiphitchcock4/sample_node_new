@@ -29,6 +29,11 @@ build:
    # image_name: drydock/u12nod
    # image_tag: prod
    # pull: true  
+  pre_ci_boot:
+    image_name: shiphitchcock4/hitchcock4_sample_node
+    image_tag: latest
+    pull: true
+    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
   ci:
     - node --version
