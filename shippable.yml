@@ -34,7 +34,7 @@ env:
   #  - node_js: 0.10
    # - node_js: 0.12
 branches:
-  only:
+  exclude:
    # - branch
     - env2    
   
