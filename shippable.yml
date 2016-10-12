@@ -11,7 +11,7 @@ node_js:
 services:
  
  # - neo4j
-  - couchdb
+ # - couchdb
   - rethinkdb
 env:
   global:
