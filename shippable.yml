@@ -2,7 +2,7 @@ language: node_js
 # Version number
 node_js:
  # - 0.10
-  - 0.12
+  #- 0.12
   - 4.2.3
   #- iojs-v1
   #- iojs-v2
@@ -24,15 +24,15 @@ env:
     #- sre=sru
 matrix:    
   include:
-    - node_js: "899"
+    - node_js: "0.10"
       #env: 
        # - bar=foo
       env: ship@=test
-    #- node_js: "0.10"
-     # env: ship@=test
+    - node_js: "0.12"
+      env: ship@=test
   allow_failures:
-    - node_js: 899
-    #- node_js: 0.12
+    - node_js: 0.10
+    - node_js: 0.12
 #branches:
  # only:
    # - branch
@@ -42,20 +42,24 @@ matrix:
 build:
 
 
-  #pre_ci_boot:
-   # image_name: drydock/u12nod
-   # image_tag: prod
-   # pull: true  
+  pre_ci:
+    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+
+  pre_ci_boot:
+    image_name: drydock/u12nod
+    image_tag: prod
+    pull: true  
   #pre_ci_boot:
    # image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
    # image_tag: test
    # pull: true
    # options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
-  #post_ci:
-   # - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
-    #- docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
+  post_ci:
+    #- docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+    - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
 
+    
     
   ci:
     - node --version
