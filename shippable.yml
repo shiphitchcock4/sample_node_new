@@ -1,7 +1,7 @@
 language: node_js
 # Version number
 node_js:
-  - 0.10
+ # - 0.10
   - 0.12
   - 4.2.3
   #- iojs-v1
@@ -23,15 +23,15 @@ env:
     #- FO&O=FUBU
     #- sre=sru
 matrix:    
-  exclude:
-    - node_js: "0.12"
+  include:
+    #- node_js: "0.12"
       #env: 
        # - bar=foo
    #   env: ship@=test
     - node_js: "0.10"
-    #  env: ship@=test
- # allow_failures:
-  #  - node_js: 0.10
+      env: ship@=test
+  allow_failures:
+    - node_js: 0.10
    # - node_js: 0.12
 #branches:
  # only:
@@ -52,9 +52,9 @@ build:
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
-  post_ci:
-    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
-    - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
+  #post_ci:
+   # - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+    #- docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
 
     
   ci:
