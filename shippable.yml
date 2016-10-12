@@ -23,12 +23,12 @@ env:
     #- FO&O=FUBU
     #- sre=sru
 matrix:    
-  exclude:
-    - node_js: "0.12"
+  include:
+    - node_js: "899"
       #env: 
        # - bar=foo
    #   env: ship@=test
-    - node_js: "0.10"
+   # - node_js: "0.10"
     #  env: ship@=test
  # allow_failures:
   #  - node_js: 0.10
