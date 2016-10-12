@@ -22,21 +22,21 @@ env:
     #- secure: ZiVXA9z/7gCZPnN+sN/g+v7x6Y8fGfnku+iN6oGzeGA04TJWPf1hUYMhd1oMCTQ5VH00nbgD5jj8OnwfanbVtZGypE0oafMwJ4fKIPo/1Lwv/0uOMitvc31xLORFmjUWQeLIPnXiFyp9el9WXg27Oc+/S+8f/vZqibM75oJS/tCeLhyWfzgcZsxg+x/reUrl+iUMrwjo1GNyqoYBMrE3WwMttsSrWILhqbRB9FjAp1zIyqVoPpR2ipc0S8zvs+2e9mZ2nHBv5QUi88O01lSaGVcBRAYHGW4i/ugmNgTJgLmNyEbTYkeAcMIQIKt/zeRQlopG2KdqTbcuMM1j68Exkw==
     #- FO&O=FUBU
     #- sre=sru
-matrix:    
-  include:
-    - node_js: "0.10"
+#matrix:    
+  #include:
+    #- node_js: "0.10"
       #env: 
        # - bar=foo
-      env: ship@=test
-    - node_js: "0.12"
-      env: ship@=test
-  allow_failures:
-    - node_js: 0.10
-    - node_js: 0.12
-#branches:
- # only:
+    #  env: ship@=test
+    #- node_js: "0.12"
+     # env: ship@=test
+ # allow_failures:
+  #  - node_js: 0.10
+   # - node_js: 0.12
+branches:
+  only:
    # - branch
-   # - master    
+    - master    
   
   
 build:
