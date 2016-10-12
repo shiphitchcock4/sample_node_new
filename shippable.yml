@@ -10,10 +10,10 @@ node_js:
   #- 5.0
 env:
   global:
-    #- bar=foo 
-    #- FOO=BAR
+    - bar=foo 
+    - FOO=BAR
     #- TOO=["TUBU"]
-    - secure: wDmwYZpdV8meNIOBj+ElFCESHdLpjpgm71Erx3pDa+WPSkdtQ52+GgJibls7dwXJnMyss9jG5XjMPT41SacGw/3Fj32rRrkrT3CC/5TT8KYhfbe4/aBXQFsZrbyhwfw55AqmbZTpfWHqjnjk++/on/qbF6si5RD1oobx2dcrU4iurK/dF55uajMqBtgzOy651mGSHmTln2vWi0QR2vUmcEwJlh4DOTapwWjFj6ZrlDvfV6dUF0+WIJDoyK2JnsswVqMT7k9fiL7OeKlmyeKsHPwBFTJNqq0deAu0huDWrz3viqqsEwevyRuDc2rLvVtUAsO1R/7gar56fvQsRuRh2A==
+    #- secure: wDmwYZpdV8meNIOBj+ElFCESHdLpjpgm71Erx3pDa+WPSkdtQ52+GgJibls7dwXJnMyss9jG5XjMPT41SacGw/3Fj32rRrkrT3CC/5TT8KYhfbe4/aBXQFsZrbyhwfw55AqmbZTpfWHqjnjk++/on/qbF6si5RD1oobx2dcrU4iurK/dF55uajMqBtgzOy651mGSHmTln2vWi0QR2vUmcEwJlh4DOTapwWjFj6ZrlDvfV6dUF0+WIJDoyK2JnsswVqMT7k9fiL7OeKlmyeKsHPwBFTJNqq0deAu0huDWrz3viqqsEwevyRuDc2rLvVtUAsO1R/7gar56fvQsRuRh2A==
    # - FO%&O=fizz
   matrix:
   
@@ -29,11 +29,11 @@ build:
    # image_name: drydock/u12nod
    # image_tag: prod
    # pull: true  
-  pre_ci_boot:
-    image_name: shiphitchcock4/hitchcock4_sample_node
-    image_tag: latest
-    pull: true
-    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+ # pre_ci_boot:
+  #  image_name: shiphitchcock4/hitchcock4_sample_node
+   # image_tag: latest
+   # pull: true
+   # options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
   ci:
     - node --version
