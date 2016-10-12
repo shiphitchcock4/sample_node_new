@@ -61,7 +61,7 @@ build:
 
     
     
-  ci:
+  ci: 
     - node --version
     - echo $FOO
     - echo $M1
