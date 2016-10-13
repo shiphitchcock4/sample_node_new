@@ -15,7 +15,8 @@ env:
     - j1=ni
     #- FOO=BAR
     #- TOO=["TUBU"]
-    - secure: HGTpysGrWcSdxABD4CgOtngWvLK83yYUSet+OGlpL+CtjHUtk4DIUuQ8V6awy5sCGOMVVH7LHGSMjgiEEqWimmNioUeaLQW5G1Mj4pHRWdwoe7xHxSe5IdMITGSU3Lo4JtqYuQ99FaaUcZvnzacZKKedDyWbeYSDRk031Gh5MKE3plo4ntLt4gpRt6CVAxD/YVrcLRDOETTfRN+lWrsQzSTW7KjCMZSBgUcKl3A2BLUeiV11Xz+CmVPeTU1kEpSqakalTPoJmdsUXzeru4kil4914vxGF5BLxLggraJJkW+x3leKrN4ksKrLqUeV78mIw84ne23OuvhrLuLFEN7BgA==
+    - secure: Ewl+A9Kg0RMStv20MVGI9s9L2Wf+JJL0b8ectfCH8sNWyEdKfLo/8WOk9fDpopWYEo/O1U3PzNE0Nl/fGA7jiMo77mna1IJ9RSOoDPmENHEeqOX/aVoU5wHRnszte9er7rfmuOrJC2i545pkKxymesGDc2z/5y2N8Cdkuhls3bF+iJ36wou76I1nWXZBulgs+pvqBEgPT6mgx0rI/hj8CSrWzhCB2/mIIubjnURbX+WzQiGhkseJJRGAs0j42cTV6Kf7JJj9Tm3au2U3bK+Lke0gwNChngnYGgm69o3Y5l1rxjCp4SGYEEofWeUdPRMpr1d1JF2bTx37N+nQMzJePw==
+    #- secure: HGTpysGrWcSdxABD4CgOtngWvLK83yYUSet+OGlpL+CtjHUtk4DIUuQ8V6awy5sCGOMVVH7LHGSMjgiEEqWimmNioUeaLQW5G1Mj4pHRWdwoe7xHxSe5IdMITGSU3Lo4JtqYuQ99FaaUcZvnzacZKKedDyWbeYSDRk031Gh5MKE3plo4ntLt4gpRt6CVAxD/YVrcLRDOETTfRN+lWrsQzSTW7KjCMZSBgUcKl3A2BLUeiV11Xz+CmVPeTU1kEpSqakalTPoJmdsUXzeru4kil4914vxGF5BLxLggraJJkW+x3leKrN4ksKrLqUeV78mIw84ne23OuvhrLuLFEN7BgA==
     - secure: qhIvgMlFdajIklYPunJ4hnoF4A7nG1NdDEGutp/FMLVxVo6NjhE1ZyuW0uARuB0E6VVi3qMW9iIG6fFj7hkKpWAobADikNw2Bm4hNLi5qhvEINvmRT0gJTdDB0isEIaMU2PjVzwTwUbtyKml3y4JBcbb6bPCsVwVzy83UVxa9STo66/NIKKNcBu33i4JNYA2a9wegWQlhPuXgs0l8MjCR0csLTkY0e3gaZe7zq2JzmLL29ULGSx3FTcNUjPywfFmSUK+tVJPf7ci9MQViUv+xAm4gIL4TfObjPGWaZxhb12GEMFW+vJAmN9nGdk59KPOC2fkiXx8atB9Jen32V9ePg==
     - secure: wDmwYZpdV8meNIOBj+ElFCESHdLpjpgm71Erx3pDa+WPSkdtQ52+GgJibls7dwXJnMyss9jG5XjMPT41SacGw/3Fj32rRrkrT3CC/5TT8KYhfbe4/aBXQFsZrbyhwfw55AqmbZTpfWHqjnjk++/on/qbF6si5RD1oobx2dcrU4iurK/dF55uajMqBtgzOy651mGSHmTln2vWi0QR2vUmcEwJlh4DOTapwWjFj6ZrlDvfV6dUF0+WIJDoyK2JnsswVqMT7k9fiL7OeKlmyeKsHPwBFTJNqq0deAu0huDWrz3viqqsEwevyRuDc2rLvVtUAsO1R/7gar56fvQsRuRh2A==
    # - FO%&O=fizz
@@ -83,7 +84,8 @@ build:
     - echo $s1
     #- echo $SOO      
    # - echo $FO%&O   
-    - echo "$FO&O"
+    #- echo "$FO&O"
+    - echo "$FO*O"
     - echo $A
 integrations:
   hub:
