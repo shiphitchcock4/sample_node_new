@@ -8,11 +8,7 @@ node_js:
   #- iojs-v2
   #- iojs-v3
   #- 5.0
-services:
- 
-  - neo4j
- # - couchdb
-  #- rethinkdb
+
 env:
   global:
     - bar=foo 
