@@ -15,7 +15,7 @@ env:
     - j1=ni
     #- FOO=BAR
     #- TOO=["TUBU"]
-    - secure: yWSkx3OLym8QZUOY5sD7VmGBNJ3oWXa31N+p0ZuoysqzRIO3SdFYJzrnq/eGMsZ4oXgLjGaL/63ee+Nqb4W7q42rksUp/Lk99zTnsOJqV6N+/xFWwUL1+H2e3moyrAR6SVwzqmZ5im0qpYfAAoGcufoLHWTGLWC+98Y0cQVg9faotgqmixvensv9lnjWRzD372hdSQcPnPqCx+nyHSDfFJcbxxhK2vFBXofLBVteqXMsXcf2Dhn4tGL9p5oYQh1da77BqoVthlpv1gFuJUywqzqh2NohdEha2HaXnxLprHUOc/AC3Zf/oU2/xQxOmaTC0WLVAuHkwxPPEzeNA6BD0A==
+    - secure: T/mcPaegA7yZxkjNApKQKV5OpPsIYohDkFIG8VKUye6ok8kTz/bOf7LGBunHD0o+osuxr23E7KlSdCgWxhUE3JT/MGK45sEg3QIbD0/tvSSrshn2RW1TIlYEvaBrWPtkyM09LMsMDFCn5ROD4eCcAB3qo+Z/W6BM+JJgDZKtl5nDh59R4apJSpG88G9KvWEtaRmg19yySCnpakrNdd1jWuDcI7QXVDJOH8xfdhHLFvyCFKRMZzaRfVtQp4MvR5syN3jHPNaFrE+mKhQOwp5ASSaErFmheuhPbrlC9cj/TlK3KCximytVQPsgpmodFy/6b4gWC1ZkKw0nrvCr6h9plQ==
     - secure: qhIvgMlFdajIklYPunJ4hnoF4A7nG1NdDEGutp/FMLVxVo6NjhE1ZyuW0uARuB0E6VVi3qMW9iIG6fFj7hkKpWAobADikNw2Bm4hNLi5qhvEINvmRT0gJTdDB0isEIaMU2PjVzwTwUbtyKml3y4JBcbb6bPCsVwVzy83UVxa9STo66/NIKKNcBu33i4JNYA2a9wegWQlhPuXgs0l8MjCR0csLTkY0e3gaZe7zq2JzmLL29ULGSx3FTcNUjPywfFmSUK+tVJPf7ci9MQViUv+xAm4gIL4TfObjPGWaZxhb12GEMFW+vJAmN9nGdk59KPOC2fkiXx8atB9Jen32V9ePg==
     - secure: wDmwYZpdV8meNIOBj+ElFCESHdLpjpgm71Erx3pDa+WPSkdtQ52+GgJibls7dwXJnMyss9jG5XjMPT41SacGw/3Fj32rRrkrT3CC/5TT8KYhfbe4/aBXQFsZrbyhwfw55AqmbZTpfWHqjnjk++/on/qbF6si5RD1oobx2dcrU4iurK/dF55uajMqBtgzOy651mGSHmTln2vWi0QR2vUmcEwJlh4DOTapwWjFj6ZrlDvfV6dUF0+WIJDoyK2JnsswVqMT7k9fiL7OeKlmyeKsHPwBFTJNqq0deAu0huDWrz3viqqsEwevyRuDc2rLvVtUAsO1R/7gar56fvQsRuRh2A==
    # - FO%&O=fizz
@@ -84,7 +84,7 @@ build:
     #- echo $SOO      
    # - echo $FO%&O   
     #- echo "$FO&O"
-    - echo "$FO*O"
+    - echo "$FOO#"
     - echo $A
 integrations:
   hub:
