@@ -15,80 +15,23 @@ env:
     - j1=ni
     #- FOO=BAR
     #- TOO=["TUBU"]
-    - secure: JrIs2dm4ZXN2cATZ2mc71/m+MizQK/JGLmP8UOl/2dnRl2zPm0bzPDEwrKGyIyBzJHlcrbpgl1UapqUqRXwdl8rIVU6iGbAv60WX3QdBJECMVkXsPoswr8bKj/2Z0i3loIncCuq5KRzQE4kmcPbm8cz8zT2gNrrN/VRZf4Lo0KFyMq7A+zw0YT5WawSSXgVkZSpTzzFEgZM562xB/Hldia+ob+9f+vOeDtLJdz4gU9HTH1B/hNsnoOwetMmMmXKk+Ys/ZQ38KDq17FLVgxbtS+spF9jcL/anJgNIYineN9PudJ6Q3o32tk/KCcSFnA4G6YGUvWvL0PU9BnNiPUzIpw==
-    - secure: qhIvgMlFdajIklYPunJ4hnoF4A7nG1NdDEGutp/FMLVxVo6NjhE1ZyuW0uARuB0E6VVi3qMW9iIG6fFj7hkKpWAobADikNw2Bm4hNLi5qhvEINvmRT0gJTdDB0isEIaMU2PjVzwTwUbtyKml3y4JBcbb6bPCsVwVzy83UVxa9STo66/NIKKNcBu33i4JNYA2a9wegWQlhPuXgs0l8MjCR0csLTkY0e3gaZe7zq2JzmLL29ULGSx3FTcNUjPywfFmSUK+tVJPf7ci9MQViUv+xAm4gIL4TfObjPGWaZxhb12GEMFW+vJAmN9nGdk59KPOC2fkiXx8atB9Jen32V9ePg==
-    - secure: wDmwYZpdV8meNIOBj+ElFCESHdLpjpgm71Erx3pDa+WPSkdtQ52+GgJibls7dwXJnMyss9jG5XjMPT41SacGw/3Fj32rRrkrT3CC/5TT8KYhfbe4/aBXQFsZrbyhwfw55AqmbZTpfWHqjnjk++/on/qbF6si5RD1oobx2dcrU4iurK/dF55uajMqBtgzOy651mGSHmTln2vWi0QR2vUmcEwJlh4DOTapwWjFj6ZrlDvfV6dUF0+WIJDoyK2JnsswVqMT7k9fiL7OeKlmyeKsHPwBFTJNqq0deAu0huDWrz3viqqsEwevyRuDc2rLvVtUAsO1R/7gar56fvQsRuRh2A==
-   # - FO%&O=fizz
-  matrix:
-  
-    - GOO=GUBU
-    - secure: ZiVXA9z/7gCZPnN+sN/g+v7x6Y8fGfnku+iN6oGzeGA04TJWPf1hUYMhd1oMCTQ5VH00nbgD5jj8OnwfanbVtZGypE0oafMwJ4fKIPo/1Lwv/0uOMitvc31xLORFmjUWQeLIPnXiFyp9el9WXg27Oc+/S+8f/vZqibM75oJS/tCeLhyWfzgcZsxg+x/reUrl+iUMrwjo1GNyqoYBMrE3WwMttsSrWILhqbRB9FjAp1zIyqVoPpR2ipc0S8zvs+2e9mZ2nHBv5QUi88O01lSaGVcBRAYHGW4i/ugmNgTJgLmNyEbTYkeAcMIQIKt/zeRQlopG2KdqTbcuMM1j68Exkw==
-    #- FO&O=FUBU
-    #- sre=sru
-    #include:
-     # - node_js: "0.10"
-      #  env: 
-       #   - bar=foo
-    #  env: ship@=test
-    #- node_js: "0.12"
-     # env: ship@=test
- # allow_failures:
-  #  - node_js: 0.10
-   # - node_js: 0.12
-#matrix:    
-  #include:
-    #- node_js: "0.10"
-      #env: 
-       # - bar=foo
-    #  env: ship@=test
-    #- node_js: "0.12"
-     # env: ship@=test
- # allow_failures:
-  #  - node_js: 0.10
-   # - node_js: 0.12
-#branches:
- # exclude:
-   # - branch
-  #  - env2    
+ 
+   
+ 
+branches:
+  only:
+    - branchonly
+    - env2    
   
   
 build:
 
 
-  pre_ci:
-    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
-
-  #pre_ci_boot:
-   # image_name: drydock/u14nodpls
-   # image_tag: prod
-   # pull: true  
-  pre_ci_boot:
-    image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
-    image_tag: test
-    pull: true
-    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
-    
-  post_ci:
-   # - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
-    - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
 
     
     
   ci: 
     - node --version
-    - echo $FOO
-    - echo $M1
-    - echo $rc
-    - echo $rc1
-    - echo $s1
-    #- echo $SOO      
-   # - echo $FO%&O   
-    #- echo "$FO&O"
-    - echo "$foo:loo"
-    - echo $A
-integrations:
-  hub:
-    - integrationName: ship4-docker
-      type: docker
+
             
   
