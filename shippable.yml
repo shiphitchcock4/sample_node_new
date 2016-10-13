@@ -15,8 +15,7 @@ env:
     - j1=ni
     #- FOO=BAR
     #- TOO=["TUBU"]
-    - secure: s3szyBOfLjyRirSVhb7mz+mJVeCnzDabqs6uGqLw4wO6iGnGE0gUql5YTprZcrUdhJm8wy+LkShNUpeJspw54ksXk7BPC4LLRz3QZm5RZFsplgRGL3NorspdHsw4uiVi1XAwBA9LBu4BQnDqJNgv9MgZWSMEJRemMY+8D4OpusLF0GzV0uhM4qklqCYw8O4QrmMl3JCPis8MDJEakVRsRM/0OGm+6A4mWv64BbjMGx0VQj/0YnHSKdhK/SgrYFB1iurDrT1UiJmqiW85Iyl9xX9OCHvn1p7JKz8r6u2AIiag4tQ0pOvMEo2CFzJisFwvSHw2oyFn96lChYrrg9sr4A==
-    - secure: 1W8GpKJeOLWPQ8d36gAiSzYawNPs3DZoldEWxYsXkE+u/rEiFb1FHdioqbcqs6966ZZkP0yTZsEAd6sBGxCsLlBmzu7QEzuTFsx0f1+fALor5wT7p8wK9ofDmcZxgYIlcMgCgpuvx+1UM5zCEdJuMZo92+JO/KhLpIbydFaPGEiFMGaCJXL/dJxMONb9dJY8vSVXHA7O5r0R+KgvXqCKfueANBZnbr1NSttrVnkUsxrOh8vzc9+dWxWVwCcFbk8pR9R71t8S9ZcMLHQZG5kh69VvszbCQrDgtR7eUvbVgmCzqruPNOhO598mZlZK72Vl7RDWIjw8A4JdX4g2QzxYOQ==
+    - secure: bFpXtrLA0hexNIC12UvkJHHIayIMxOMv+YAnqFO2rfq2Vnb1VDzSGB4EuBgYMdENCpZ+LbmmrbujehAyzkU0pp55u5I1FDjXFZhdv0FJGb0vt2z5teJ3suAKp07C++9gY6EJ6Qg7T1UNnGWV7C48rQghWCLtzkQC/0Tov7kB7jafT/hsBzvkc37KwqitcGFdVczOblNN61iA+MZbiCyX6ejORW+f9HOkr9/Q/4jt6LeADqV73gvROhLXv+gzHLjh7HgszzjSQYj6MRnONbinQpwvwrd65GpIWCJiLlDFvpo6qHvgfWgB2ren7+0tU0yLQl+847ZC+B4Z0yJiJ54LTQ==
     - secure: qhIvgMlFdajIklYPunJ4hnoF4A7nG1NdDEGutp/FMLVxVo6NjhE1ZyuW0uARuB0E6VVi3qMW9iIG6fFj7hkKpWAobADikNw2Bm4hNLi5qhvEINvmRT0gJTdDB0isEIaMU2PjVzwTwUbtyKml3y4JBcbb6bPCsVwVzy83UVxa9STo66/NIKKNcBu33i4JNYA2a9wegWQlhPuXgs0l8MjCR0csLTkY0e3gaZe7zq2JzmLL29ULGSx3FTcNUjPywfFmSUK+tVJPf7ci9MQViUv+xAm4gIL4TfObjPGWaZxhb12GEMFW+vJAmN9nGdk59KPOC2fkiXx8atB9Jen32V9ePg==
     - secure: wDmwYZpdV8meNIOBj+ElFCESHdLpjpgm71Erx3pDa+WPSkdtQ52+GgJibls7dwXJnMyss9jG5XjMPT41SacGw/3Fj32rRrkrT3CC/5TT8KYhfbe4/aBXQFsZrbyhwfw55AqmbZTpfWHqjnjk++/on/qbF6si5RD1oobx2dcrU4iurK/dF55uajMqBtgzOy651mGSHmTln2vWi0QR2vUmcEwJlh4DOTapwWjFj6ZrlDvfV6dUF0+WIJDoyK2JnsswVqMT7k9fiL7OeKlmyeKsHPwBFTJNqq0deAu0huDWrz3viqqsEwevyRuDc2rLvVtUAsO1R/7gar56fvQsRuRh2A==
    # - FO%&O=fizz
@@ -85,6 +84,7 @@ build:
     #- echo $SOO      
     - echo $FO%&O   
     - echo "$FO&O"
+    - echo $A=b 
 integrations:
   hub:
     - integrationName: ship4-docker
