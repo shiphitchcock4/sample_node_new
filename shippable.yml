@@ -19,9 +19,10 @@ env:
    
  
 branches:
-  only:
+ except:
+    #- branchonly
+    - env2 
     - branchonly
-    - env2    
   
   
 build:
