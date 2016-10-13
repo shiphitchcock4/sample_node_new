@@ -22,7 +22,7 @@ branches:
  except:
     #- branchonly
     - env2 
-    - branchonlypr
+    - branchonly
   
   
 build:
