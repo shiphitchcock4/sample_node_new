@@ -20,8 +20,9 @@ env:
  
 branches:
   only:
-    - branchonly
-    - env2    
+    #- branchonly
+    - env2 
+    - branchonlypr
   
   
 build:
