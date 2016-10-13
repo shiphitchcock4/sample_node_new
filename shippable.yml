@@ -20,7 +20,7 @@ env:
  
 branches:
   except:
-    - branchonly
+    #- branchonly
     - env2    
   
   
