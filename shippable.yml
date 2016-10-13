@@ -10,9 +10,7 @@ node_js:
   #- iojs-v3 
  
 
-branches:
-  except:
-    - master  
+  
   
   
 build:
