@@ -84,7 +84,7 @@ build:
     #- echo $SOO      
    # - echo $FO%&O   
    # - echo "$FO&O"
-    - echo $A=b 
+    - echo $A
 integrations:
   hub:
     - integrationName: ship4-docker
