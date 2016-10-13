@@ -63,9 +63,7 @@ build:
    # image_tag: prod
    # pull: true  
   pre_ci_boot:
-   # image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
-    
-    image_name: ubuntu
+    image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
     image_tag: test
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
