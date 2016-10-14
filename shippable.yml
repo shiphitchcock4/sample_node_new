@@ -65,11 +65,11 @@ build:
   pre_ci_boot:
     image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
     image_tag: test
-    pull: true
+    pull: false
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
   post_ci:
-    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+   # - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
     - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
 
     
