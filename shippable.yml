@@ -49,8 +49,8 @@ build:
     - echo $A
 integrations:
   hub:
-    - integrationName: ship4-docker
-      type: docker1
+    - integrationName: ship4-docker1
+      type: docker
             
   
 
