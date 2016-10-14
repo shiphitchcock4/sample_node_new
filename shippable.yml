@@ -1,4 +1,4 @@
-               language: node_js
+language: node_js
 
 # Version number
 node_js:
@@ -14,12 +14,7 @@ node_js:
   
   
 build:
-
-
-
-    
-    
-ci: 
-- node --version
+  ci: 
+    - node --version
    
              
