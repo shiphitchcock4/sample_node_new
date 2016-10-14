@@ -19,7 +19,7 @@ builds:
 
     
     
-  ci: 
-    - node --version
+ci: 
+        - node --version
    
              
