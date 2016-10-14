@@ -46,9 +46,9 @@ env:
  # allow_failures:
   #  - node_js: 0.10
    # - node_js: 0.12
-#branches:
- # exclude:
-   # - branch
+branches:
+  only:
+    - master
   #  - env2    
   
   
