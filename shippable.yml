@@ -46,7 +46,7 @@ matrix:
       #env: 
         #- bar=foo1
     #  env: ship@=test
-    - #node_js: "0.12"
+    #- node_js: "0.12"
       #env:
        # - n1=one
      # env: ship@=test
