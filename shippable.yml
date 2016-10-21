@@ -44,7 +44,7 @@ matrix:
   exclude:
     - node_js: "0.10"
       env: 
-        - GOO=GUBU
+        - FOO=BARu
     #  env: ship@=test
    # - node_js: "0.12"
       #env:
