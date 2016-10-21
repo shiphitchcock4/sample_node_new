@@ -1,7 +1,7 @@
 language: node_js
 # Version number
 node_js:
-  - 0.10
+  #- 0.10
   - 0.12  
   - 4.2.3
   #- iojs-v1
@@ -41,18 +41,18 @@ env:
   #  - node_js: 0.10
    # - node_js: 0.12
 matrix:    
-  exclude:
+  include:
     - node_js: "0.10"
-      env: 
-        - FOO=BARu
-    #  env: ship@=test
-    - node_js: "0.12" 
-      env:
-        - FOO=BARu
+     # env: 
+      #  - FOO=BARu
+      env: ship@=test
+    #- node_js: "0.12" 
+      #env:
+       # - FOO=BARu
        # - n1=one
      # env: ship@=test
- # allow_failures:
-  #  - node_js: 0.10
+  allow_failures:
+    - node_js: 0.10
    # - node_js: 0.12
 #branches:
   #only:
@@ -66,10 +66,10 @@ build:
   #pre_ci:
    # - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
 
-  pre_ci_boot:
-    image_name: drydock/u14nodpls
-    image_tag: prod
-    pull: true  
+#  pre_ci_boot:
+ #   image_name: drydock/u14nodpls
+ #   image_tag: prod
+ #   pull: true  
     
   #pre_ci_boot:
    # image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
