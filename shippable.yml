@@ -1,9 +1,9 @@
 language: node_js
 # Version number
 node_js:
-  - 0.10
-  - 0.12  
-  #- 4.2.3
+ # - 0.10
+  #- 0.12  
+  - 4.2.3
   #- iojs-v1
   #- iojs-v2
   #- iojs-v3
@@ -40,13 +40,13 @@ env:
  # allow_failures:
   #  - node_js: 0.10
    # - node_js: 0.12
-#matrix:    
-  #include:
-    #- node_js: "0.10"
-      #env: 
-       # - bar=foo
+matrix:    
+  include:
+    - node_js: "0.10"
+      env: 
+        - bar=foo1
     #  env: ship@=test
-    #- node_js: "0.12"
+    - node_js: "0.12"
      # env: ship@=test
  # allow_failures:
   #  - node_js: 0.10
