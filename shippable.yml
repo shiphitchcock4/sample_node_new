@@ -60,8 +60,8 @@ matrix:
 build:
 
 
-  #pre_ci:
-   # - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+  pre_ci:
+    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
 
  # pre_ci_boot:
   #  image_name: drydock/u14nodpls
@@ -74,9 +74,9 @@ build:
     pull: false
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
-  #post_ci:
+  post_ci:
    # - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
-   # - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
+    - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
 
     
     
