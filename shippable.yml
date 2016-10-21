@@ -42,13 +42,13 @@ env:
    # - node_js: 0.12
 matrix:    
   include:
-    - node_js: "0.10"
-      env: 
-        - bar=foo1
+    - node_js: "123"
+      #env: 
+        #- bar=foo1
     #  env: ship@=test
-    - node_js: "0.12"
-      env:
-        - n1=one
+    - #node_js: "0.12"
+      #env:
+       # - n1=one
      # env: ship@=test
  # allow_failures:
   #  - node_js: 0.10
@@ -62,8 +62,8 @@ matrix:
 build:
 
 
-  pre_ci:
-    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+ # pre_ci:
+  #  - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
 
  # pre_ci_boot:
   #  image_name: drydock/u14nodpls
@@ -73,7 +73,7 @@ build:
   pre_ci_boot:
     image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
     image_tag: test
-    pull: false
+    pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
   post_ci:
