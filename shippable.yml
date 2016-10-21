@@ -1,9 +1,11 @@
-language: node_js
+language: none
 # Version number
 node_js:
  # - 0.10
   - 0.12
-  - 4.2.3
+  - 1.9.2
+  
+  #- 4.2.3
   #- iojs-v1
   #- iojs-v2
   #- iojs-v3
@@ -60,10 +62,10 @@ build:
  # pre_ci:
   #  - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
 
-  pre_ci_boot:
-    image_name: drydock/u14nodpls
-    image_tag: prod
-    pull: true  
+  #pre_ci_boot:
+   # image_name: drydock/u14nodpls
+   # image_tag: prod
+   # pull: true  
   #pre_ci_boot:
    # image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
    # image_tag: test
