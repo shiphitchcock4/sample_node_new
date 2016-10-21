@@ -18,7 +18,7 @@ env:
   #  - bar=foo 
     #- j1=ni
     
-   #- secure: mzigT9RxSxqAOVqPL96HlGCwwUHKqkgoS9AWrspZtcHQSEzDm+YpqRzAyEwBEsYGm9gYE7C4UkMJm5eGx+4vW/OtZJAGFi5BVml25EfBjx0+NJklIM3PGuEQKjF+itqhcNZFTrlmtOnOuNUsc1gNlf6TKHmbrnb90Ge263oAAoZIyF5JCEojopS2ZA+PVXcQDCaCx8lzEJOQNENqDH0BCcT5bAvrn51ZU45sBu8+FxpXnMCEFEGLYfdvp81NcruOp2+QqhPuMzimm2Ds7Bo6xtLkrq9c5mwF14w+fewAJc/y10oJicf+23ZW1Or58fAzJL3HTdojOq4D2deJOcXqJQ==
+    - secure: mzigT9RxSxqAOVqPL96HlGCwwUHKqkgoS9AWrspZtcHQSEzDm+YpqRzAyEwBEsYGm9gYE7C4UkMJm5eGx+4vW/OtZJAGFi5BVml25EfBjx0+NJklIM3PGuEQKjF+itqhcNZFTrlmtOnOuNUsc1gNlf6TKHmbrnb90Ge263oAAoZIyF5JCEojopS2ZA+PVXcQDCaCx8lzEJOQNENqDH0BCcT5bAvrn51ZU45sBu8+FxpXnMCEFEGLYfdvp81NcruOp2+QqhPuMzimm2Ds7Bo6xtLkrq9c5mwF14w+fewAJc/y10oJicf+23ZW1Or58fAzJL3HTdojOq4D2deJOcXqJQ==
     
     #- FOO=BAR
     #- TOO=["TUBU"]
@@ -28,7 +28,7 @@ env:
   matrix:
   
     - GOO=GUBU
-    - secure: SrVB2HEL1AqYQorDG0B1VKOtOOH7tN3IsNPVvaCLavEb7wPDaBmYfxDzJ96hdwi9Av3pj46no8IcGmqgcCvLVENIbs7ZwzvR2AT/KP2oIvxWcHySUuBfBiWqn8UFzxkBkppr9TBitR04LyxpGO1RSSTDOAguHnZjQ3HFTy/w2ypYkiYWLNLabs/HsmQIx8N17AJme1RyoD4eO8dEj4fydIR3I3dBA53wOIAoPvuqVnnpiK9eO6cPqQsV4yqo8hKK6zSAou2UndZ45qLPnLZUEcriOCVpIQLDOErO0UEBUWdJcTA5KwmkNRgTEzXASgNq/B6+ZzFMoqfm7sBxwdxR6g==
+    #- secure: SrVB2HEL1AqYQorDG0B1VKOtOOH7tN3IsNPVvaCLavEb7wPDaBmYfxDzJ96hdwi9Av3pj46no8IcGmqgcCvLVENIbs7ZwzvR2AT/KP2oIvxWcHySUuBfBiWqn8UFzxkBkppr9TBitR04LyxpGO1RSSTDOAguHnZjQ3HFTy/w2ypYkiYWLNLabs/HsmQIx8N17AJme1RyoD4eO8dEj4fydIR3I3dBA53wOIAoPvuqVnnpiK9eO6cPqQsV4yqo8hKK6zSAou2UndZ45qLPnLZUEcriOCVpIQLDOErO0UEBUWdJcTA5KwmkNRgTEzXASgNq/B6+ZzFMoqfm7sBxwdxR6g==
   
   #  - secure: ZiVXA9z/7gCZPnN+sN/g+v7x6Y8fGfnku+iN6oGzeGA04TJWPf1hUYMhd1oMCTQ5VH00nbgD5jj8OnwfanbVtZGypE0oafMwJ4fKIPo/1Lwv/0uOMitvc31xLORFmjUWQeLIPnXiFyp9el9WXg27Oc+/S+8f/vZqibM75oJS/tCeLhyWfzgcZsxg+x/reUrl+iUMrwjo1GNyqoYBMrE3WwMttsSrWILhqbRB9FjAp1zIyqVoPpR2ipc0S8zvs+2e9mZ2nHBv5QUi88O01lSaGVcBRAYHGW4i/ugmNgTJgLmNyEbTYkeAcMIQIKt/zeRQlopG2KdqTbcuMM1j68Exkw==
     #- FO&O=FUBU
@@ -63,23 +63,23 @@ env:
 build:
 
 
-  pre_ci:
-    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+  #pre_ci:
+   # - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
 
   #pre_ci_boot:
    # image_name: drydock/u14nodpls
    # image_tag: prod
    # pull: true  
     
- # pre_ci_boot:
-  #  image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
-   # image_tag: test
-    # pull: false
-    #options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+  pre_ci_boot:
+    image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
+    image_tag: test
+     pull: false
+    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
-  post_ci:
-    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
-    - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
+  #post_ci:
+   # - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+   # - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
 
     
     
