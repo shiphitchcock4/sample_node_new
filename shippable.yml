@@ -42,11 +42,11 @@ env:
    # - node_js: 0.12
 matrix:    
   exclude:
-    - node_js: "0.10"
+    - node_js: "234"
       #env: 
         #- bar=foo1
     #  env: ship@=test
-    - node_js: "0.12"
+   # - node_js: "0.12"
       #env:
        # - n1=one
      # env: ship@=test
@@ -76,9 +76,9 @@ build:
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
-  post_ci:
+  #post_ci:
    # - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
-    - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
+   # - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
 
     
     
