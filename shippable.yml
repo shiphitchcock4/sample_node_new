@@ -48,7 +48,7 @@ matrix:
     #  env: ship@=test
     - node_js: "0.12"
       env:
-        - sre=sru
+        - FOO=BARu
        # - n1=one
      # env: ship@=test
  # allow_failures:
