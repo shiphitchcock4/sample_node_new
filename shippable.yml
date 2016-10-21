@@ -16,8 +16,9 @@ env:
  
   global:
   #  - bar=foo 
-    - j1=ni
-    - secure: mzigT9RxSxqAOVqPL96HlGCwwUHKqkgoS9AWrspZtcHQSEzDm+YpqRzAyEwBEsYGm9gYE7C4UkMJm5eGx+4vW/OtZJAGFi5BVml25EfBjx0+NJklIM3PGuEQKjF+itqhcNZFTrlmtOnOuNUsc1gNlf6TKHmbrnb90Ge263oAAoZIyF5JCEojopS2ZA+PVXcQDCaCx8lzEJOQNENqDH0BCcT5bAvrn51ZU45sBu8+FxpXnMCEFEGLYfdvp81NcruOp2+QqhPuMzimm2Ds7Bo6xtLkrq9c5mwF14w+fewAJc/y10oJicf+23ZW1Or58fAzJL3HTdojOq4D2deJOcXqJQ==
+    #- j1=ni
+    
+   #- secure: mzigT9RxSxqAOVqPL96HlGCwwUHKqkgoS9AWrspZtcHQSEzDm+YpqRzAyEwBEsYGm9gYE7C4UkMJm5eGx+4vW/OtZJAGFi5BVml25EfBjx0+NJklIM3PGuEQKjF+itqhcNZFTrlmtOnOuNUsc1gNlf6TKHmbrnb90Ge263oAAoZIyF5JCEojopS2ZA+PVXcQDCaCx8lzEJOQNENqDH0BCcT5bAvrn51ZU45sBu8+FxpXnMCEFEGLYfdvp81NcruOp2+QqhPuMzimm2Ds7Bo6xtLkrq9c5mwF14w+fewAJc/y10oJicf+23ZW1Or58fAzJL3HTdojOq4D2deJOcXqJQ==
     
     #- FOO=BAR
     #- TOO=["TUBU"]
@@ -62,22 +63,23 @@ env:
 build:
 
 
- # pre_ci:
-  #  - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+  pre_ci:
+    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
 
-  pre_ci_boot:
-    image_name: drydock/u14nodpls
-    image_tag: prod
-    pull: true  
+  #pre_ci_boot:
+   # image_name: drydock/u14nodpls
+   # image_tag: prod
+   # pull: true  
+    
  # pre_ci_boot:
   #  image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
    # image_tag: test
     # pull: false
     #options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
- # post_ci:
-   # - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
-  #  - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
+  post_ci:
+    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+    - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
 
     
     
