@@ -43,10 +43,12 @@ env:
 matrix:    
   include:
     - node_js: "0.10"
-   #   env: 
-   #     - bar=foo1
+      env: 
+        - bar=foo1
     #  env: ship@=test
     - node_js: "0.12"
+      env:
+        - n1=one
      # env: ship@=test
  # allow_failures:
   #  - node_js: 0.10
