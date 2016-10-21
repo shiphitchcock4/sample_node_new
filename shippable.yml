@@ -12,7 +12,7 @@ node_js:
   #- 5.0
 
 env:
-  - foo=bar  - BAR=FOO
+  - foo=bar BAR=FOO
  # global:
   #  - bar=foo 
   #  - j1=ni
