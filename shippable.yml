@@ -20,7 +20,7 @@ env:
     
     - secure: mzigT9RxSxqAOVqPL96HlGCwwUHKqkgoS9AWrspZtcHQSEzDm+YpqRzAyEwBEsYGm9gYE7C4UkMJm5eGx+4vW/OtZJAGFi5BVml25EfBjx0+NJklIM3PGuEQKjF+itqhcNZFTrlmtOnOuNUsc1gNlf6TKHmbrnb90Ge263oAAoZIyF5JCEojopS2ZA+PVXcQDCaCx8lzEJOQNENqDH0BCcT5bAvrn51ZU45sBu8+FxpXnMCEFEGLYfdvp81NcruOp2+QqhPuMzimm2Ds7Bo6xtLkrq9c5mwF14w+fewAJc/y10oJicf+23ZW1Or58fAzJL3HTdojOq4D2deJOcXqJQ==
     
-    #- FOO=BAR
+    - FOO=BARu
     #- TOO=["TUBU"]
    # - secure: JrIs2dm4ZXN2cATZ2mc71/m+MizQK/JGLmP8UOl/2dnRl2zPm0bzPDEwrKGyIyBzJHlcrbpgl1UapqUqRXwdl8rIVU6iGbAv60WX3QdBJECMVkXsPoswr8bKj/2Z0i3loIncCuq5KRzQE4kmcPbm8cz8zT2gNrrN/VRZf4Lo0KFyMq7A+zw0YT5WawSSXgVkZSpTzzFEgZM562xB/Hldia+ob+9f+vOeDtLJdz4gU9HTH1B/hNsnoOwetMmMmXKk+Ys/ZQ38KDq17FLVgxbtS+spF9jcL/anJgNIYineN9PudJ6Q3o32tk/KCcSFnA4G6YGUvWvL0PU9BnNiPUzIpw==
     
@@ -71,11 +71,11 @@ build:
    # image_tag: prod
    # pull: true  
     
-  pre_ci_boot:
-    image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
-    image_tag: test
-    pull: false
-    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+  #pre_ci_boot:
+   # image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
+   # image_tag: test
+   # pull: false
+   # options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
   #post_ci:
    # - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
