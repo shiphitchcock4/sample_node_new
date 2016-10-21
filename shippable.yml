@@ -46,7 +46,7 @@ matrix:
       env: 
         - FOO=BARu
     #  env: ship@=test
-    - node_js: "0.12"
+    - node_js: "0.12" 
       env:
         - FOO=BARu
        # - n1=one
