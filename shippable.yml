@@ -40,11 +40,11 @@ env:
  # allow_failures:
   #  - node_js: 0.10
    # - node_js: 0.12
-#matrix:    
- # include:
-  #  - node_js: "0.10"
-     # env: 
-      #  - FOO=BARu
+matrix:    
+  include:
+    - node_js: "0.10"
+      env: 
+        - FOO:BARu
    #   env: ship@=test
     #- node_js: "0.12" 
       #env:
