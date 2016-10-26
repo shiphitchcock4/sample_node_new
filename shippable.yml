@@ -20,7 +20,7 @@ build:
    # - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
 
   pre_ci_boot:
-    image_name: drydock/u14nod
+    image_name: drydock/u12nod
     image_tag: prod
     pull: true  
   #pre_ci_boot:
