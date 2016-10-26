@@ -47,7 +47,7 @@ build:
     #- echo "$FO&O"
     - echo "$foo:loo"
     - echo $A
-    - @3%%%&&&
+    #- @3%%%&&&
 integrations:
   hub:
     - integrationName: ship4-docker
