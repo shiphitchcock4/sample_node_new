@@ -22,15 +22,15 @@ env:
     #- secure: ZiVXA9z/7gCZPnN+sN/g+v7x6Y8fGfnku+iN6oGzeGA04TJWPf1hUYMhd1oMCTQ5VH00nbgD5jj8OnwfanbVtZGypE0oafMwJ4fKIPo/1Lwv/0uOMitvc31xLORFmjUWQeLIPnXiFyp9el9WXg27Oc+/S+8f/vZqibM75oJS/tCeLhyWfzgcZsxg+x/reUrl+iUMrwjo1GNyqoYBMrE3WwMttsSrWILhqbRB9FjAp1zIyqVoPpR2ipc0S8zvs+2e9mZ2nHBv5QUi88O01lSaGVcBRAYHGW4i/ugmNgTJgLmNyEbTYkeAcMIQIKt/zeRQlopG2KdqTbcuMM1j68Exkw==
     #- FO&O=FUBU
     #- sre=sru
-matrix:    
-  exclude:
-    - node_js: "0.12"
-      env: 
-        - bar=foo
-        - new=ni
+#matrix:    
+ # exclude:
+  #  - node_js: "0.12"
+   #   env: 
+    ##    - bar=foo
+     #   - new=ni
    #   env: ship@=test
-    - node_js: "0.10"
-      env: j3=ui
+    #- node_js: "0.10"
+    #  env: j3=ui
     #  env: ship@=test
  # allow_failures:
   #  - node_js: 0.10
@@ -46,7 +46,8 @@ build:
    # - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
 
   pre_ci_boot:
-    image_name: drydock/u12nod
+   # image_name: drydock/u12nod
+    image_name: ubuntu/u12nodall
     image_tag: prod
     pull: true  
   #pre_ci_boot:
