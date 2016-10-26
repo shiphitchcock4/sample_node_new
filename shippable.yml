@@ -12,9 +12,11 @@ env:
   global:
     - bar=foo 
     - j1=ni
+    - secure: D29DPXz3jVqjCksttUiw0ftB2ZNJEfeaOP91GlI4/+0KlyNVQATXN7DbnhxQd52bDDtV6lVw3OWvVs+3Cg+FNSbRet8uJLLvlAzKMFpF+kWNNDVQgV0zMt48ThTyLCrLABHkMOJCHk5OyZni2C0vZZ7q0x1p40t1d21zLYt36p7+u1jSw5FEM5QMJ7dc6GQjiaaXA20tWkIjrLisz+Yha4HmnjC3elKua4cNi1LDoMLzUsq0U+NLQfxQap5RHbkaj1a1a5DFLW4Q5I6JKnw1Q6m3q2d6t9REip+wDOPYA5F48kGlVxypA4mn0EORc4QjsoxP0Tl6LWeLndvjqoDuiw==
+    - secure: HE+yxcRg4t0qyFQtj0rc2bml/UenKvk+7cssN8sS/8ZUFvqmR1gtl97u6CFbh9Z3nsHy1ptL/+s17WgTTmMHC52ZYPv9ES8LwSAp3dHuK8A7iyzut5SBY+DsKFvY3AJ+PyGlN3vxajbzxexSDtPeWLRAiTyR2NihnqX0XJFMGLbHhcoAAdDNhUumv497xH/BLHP9CT9R7iy2N4aitwtNx7padOaMM8k/rm4rTM8HCvgm5E2TefDlCL9Rd3OUb8QGaDuskTAfmtUwg/qn/c5bvjyAfwFM/oapatA5Ws0rqtidQwDZ68qO/9CmNTxE9vjAR75tzGNaw20kfoE/m5gSwQ==
     #- FOO=BAR
     #- TOO=["TUBU"]
-    #- secure: wDmwYZpdV8meNIOBj+ElFCESHdLpjpgm71Erx3pDa+WPSkdtQ52+GgJibls7dwXJnMyss9jG5XjMPT41SacGw/3Fj32rRrkrT3CC/5TT8KYhfbe4/aBXQFsZrbyhwfw55AqmbZTpfWHqjnjk++/on/qbF6si5RD1oobx2dcrU4iurK/dF55uajMqBtgzOy651mGSHmTln2vWi0QR2vUmcEwJlh4DOTapwWjFj6ZrlDvfV6dUF0+WIJDoyK2JnsswVqMT7k9fiL7OeKlmyeKsHPwBFTJNqq0deAu0huDWrz3viqqsEwevyRuDc2rLvVtUAsO1R/7gar56fvQsRuRh2A==
+   
    # - FO%&O=fizz
   matrix:
   
@@ -45,11 +47,10 @@ build:
   #pre_ci:
    # - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
 
-  pre_ci_boot:
+  #pre_ci_boot:
    # image_name: drydock/u12nod
-    image_name: ubuntu/u12nodall
-    image_tag: prod
-    pull: true  
+    #image_tag: prod
+    #pull: true  
   #pre_ci_boot:
    # image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
    # image_tag: test
