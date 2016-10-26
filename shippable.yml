@@ -18,6 +18,7 @@ env:
     - secure: mzigT9RxSxqAOVqPL96HlGCwwUHKqkgoS9AWrspZtcHQSEzDm+YpqRzAyEwBEsYGm9gYE7C4UkMJm5eGx+4vW/OtZJAGFi5BVml25EfBjx0+NJklIM3PGuEQKjF+itqhcNZFTrlmtOnOuNUsc1gNlf6TKHmbrnb90Ge263oAAoZIyF5JCEojopS2ZA+PVXcQDCaCx8lzEJOQNENqDH0BCcT5bAvrn51ZU45sBu8+FxpXnMCEFEGLYfdvp81NcruOp2+QqhPuMzimm2Ds7Bo6xtLkrq9c5mwF14w+fewAJc/y10oJicf+23ZW1Or58fAzJL3HTdojOq4D2deJOcXqJQ==
     - secure: VIZifeI0u1SDurYvdRd9yC9yZiqSj4G/PaqYtET2wL7PNqXMaqy1h2ygBgr1bWQuPDkCa0MCgnClE10D83SZyDkj4L0KJUR9/gFrJrCeKR2ifIG1SS/k8cRosDijjmprkiMQNCtyODQqrftyIZERcGXbcEmuoECtgx3ncvnVEWif3lfPHHc3nTwc35yHmuayjk1jngcvzBf4y8pD5FqcfwcNDKDVAgrHraE4P1xjB2Gimvk3mrfOxA019XD7XcO55bE+afoYvXOcKjuJso4HAQ3oTuLj1S5VWkG5JvB9aqO7mxUgswpTJLRBofv0qZEHQuxB7dobItXSaI63AszokQ==
     - FOO=BARu
+    - ship@=test
     #- TOO=["TUBU"]
    # - secure: JrIs2dm4ZXN2cATZ2mc71/m+MizQK/JGLmP8UOl/2dnRl2zPm0bzPDEwrKGyIyBzJHlcrbpgl1UapqUqRXwdl8rIVU6iGbAv60WX3QdBJECMVkXsPoswr8bKj/2Z0i3loIncCuq5KRzQE4kmcPbm8cz8zT2gNrrN/VRZf4Lo0KFyMq7A+zw0YT5WawSSXgVkZSpTzzFEgZM562xB/Hldia+ob+9f+vOeDtLJdz4gU9HTH1B/hNsnoOwetMmMmXKk+Ys/ZQ38KDq17FLVgxbtS+spF9jcL/anJgNIYineN9PudJ6Q3o32tk/KCcSFnA4G6YGUvWvL0PU9BnNiPUzIpw==
     
@@ -41,8 +42,8 @@ env:
   #  - node_js: 0.10
    # - node_js: 0.12
 matrix:    
-  include:
-    - node_js: "0.10"
+  exclude:
+    - node_js: "0.12"
       #env: 
       #  - FOO:BARu
       env: ship@=test
