@@ -42,19 +42,19 @@ env:
   #  - node_js: 0.10
    # - node_js: 0.12
 matrix:    
-  exclude:
-    - node_js: "0.12"
+  #exclude:
+   # - node_js: "0.12"
       #env: 
       #  - FOO:BARu
-      env: ship@=test
+  #    env: ship@=test
     #- node_js: "0.12" 
       #env:
        # - FOO=BARu
        # - n1=one
      # env: ship@=test
-  #allow_failures:
+  allow_failures:
    # - node_js: 0.10
-   # - node_js: 0.12
+    - node_js: 0.12
 #branches:
   #only:
     #- master
