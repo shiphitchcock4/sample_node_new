@@ -14,7 +14,7 @@ env:
   global:
   #  - bar=foo 
     #- j1=ni
-    
+    - secure: Llg4YarMx7TkriAdIAr9f2o3/NuzWxDFlE7HsfAQax/tLdu+VFom/IDBRNelYjS8Rk7RLt0bIvHaKuufYEiSdQWwTV/KEJpwgb/lxD8q0EWpHf8fBfpUj/qjM5MHtV2Wofe2qYG4lYh6jcBTcXkqVpZ8ILpLR4w9Bpo7V3bzw0hk3zMlVG7ZXqsKVJhWfJDggZd6p2KjZFzE6IrnYhIvrfDSUeUWmQa/QH5Ea0oshhKmK1rT9ZdezYHMQjokQ8A2VUExTFWOFlCj1fVKVwZNHPnjGqpB5wJBdvt8nd3EfoTox+4d2kVzlqvDXHz/LEuz1TNyp9McN/F/BY158v2oXw==
     - secure: mzigT9RxSxqAOVqPL96HlGCwwUHKqkgoS9AWrspZtcHQSEzDm+YpqRzAyEwBEsYGm9gYE7C4UkMJm5eGx+4vW/OtZJAGFi5BVml25EfBjx0+NJklIM3PGuEQKjF+itqhcNZFTrlmtOnOuNUsc1gNlf6TKHmbrnb90Ge263oAAoZIyF5JCEojopS2ZA+PVXcQDCaCx8lzEJOQNENqDH0BCcT5bAvrn51ZU45sBu8+FxpXnMCEFEGLYfdvp81NcruOp2+QqhPuMzimm2Ds7Bo6xtLkrq9c5mwF14w+fewAJc/y10oJicf+23ZW1Or58fAzJL3HTdojOq4D2deJOcXqJQ==
     - secure: VIZifeI0u1SDurYvdRd9yC9yZiqSj4G/PaqYtET2wL7PNqXMaqy1h2ygBgr1bWQuPDkCa0MCgnClE10D83SZyDkj4L0KJUR9/gFrJrCeKR2ifIG1SS/k8cRosDijjmprkiMQNCtyODQqrftyIZERcGXbcEmuoECtgx3ncvnVEWif3lfPHHc3nTwc35yHmuayjk1jngcvzBf4y8pD5FqcfwcNDKDVAgrHraE4P1xjB2Gimvk3mrfOxA019XD7XcO55bE+afoYvXOcKjuJso4HAQ3oTuLj1S5VWkG5JvB9aqO7mxUgswpTJLRBofv0qZEHQuxB7dobItXSaI63AszokQ==
     - FOO=BARu
@@ -41,20 +41,20 @@ env:
  # allow_failures:
   #  - node_js: 0.10
    # - node_js: 0.12
-matrix:    
-  include:
-    - node_js: "0.12"
+#matrix:    
+ # include:
+  #  - node_js: "0.12"
       #env: 
       #  - FOO:BARu
-      env: ship@=test
+   #   env: ship@=test
     #- node_js: "0.12" 
       #env:
        # - FOO=BARu
        # - n1=one
      # env: ship@=test
-  allow_failures:
+  #allow_failures:
    # - node_js: 0.10
-    - node_js: 0.12
+   # - node_js: 0.12
 #branches:
   #only:
     #- master
@@ -91,6 +91,7 @@ build:
     - echo $rc
     - echo $rc1
     - echo $s1
+    - echo $no&no
     #- echo $SOO      
    # - echo $FO%&O   
     #- echo "$FO&O"
