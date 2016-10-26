@@ -12,6 +12,7 @@ env:
   global:
     - bar=foo 
     - j1=ni
+    - secure: peNSr29KrCMeGzXdiP29zTuh4gFkZxwxdHr2uW3fNuwTooQJPGAUIgFw49xMxbuocOd5mrNlqYeD5LPPtfZuU+OSrkBuSd6gWMZXtLQlsgaxZiSG1ORaxvTul4C9VDBkRvLS0dCNme+0sde6PGmzAwyqUe0IfPQe9GOU39X5gPhsWg+A8eJohUiQiH2ULwoKmjfm/D0a3S20dmoWs3jTbmG3RudYxEE3LseEpKMZ8ttS/imMgQ5PI2c+3DdoM3b//9JxVm4+PpbGTXugU7v8IToxUJmziU33NDWFtShtQFs2HmMstILw5D0alsSvyCE6dEkgIZaN1nUEMOlDxvNO3A==
     - secure: D29DPXz3jVqjCksttUiw0ftB2ZNJEfeaOP91GlI4/+0KlyNVQATXN7DbnhxQd52bDDtV6lVw3OWvVs+3Cg+FNSbRet8uJLLvlAzKMFpF+kWNNDVQgV0zMt48ThTyLCrLABHkMOJCHk5OyZni2C0vZZ7q0x1p40t1d21zLYt36p7+u1jSw5FEM5QMJ7dc6GQjiaaXA20tWkIjrLisz+Yha4HmnjC3elKua4cNi1LDoMLzUsq0U+NLQfxQap5RHbkaj1a1a5DFLW4Q5I6JKnw1Q6m3q2d6t9REip+wDOPYA5F48kGlVxypA4mn0EORc4QjsoxP0Tl6LWeLndvjqoDuiw==
     - secure: HE+yxcRg4t0qyFQtj0rc2bml/UenKvk+7cssN8sS/8ZUFvqmR1gtl97u6CFbh9Z3nsHy1ptL/+s17WgTTmMHC52ZYPv9ES8LwSAp3dHuK8A7iyzut5SBY+DsKFvY3AJ+PyGlN3vxajbzxexSDtPeWLRAiTyR2NihnqX0XJFMGLbHhcoAAdDNhUumv497xH/BLHP9CT9R7iy2N4aitwtNx7padOaMM8k/rm4rTM8HCvgm5E2TefDlCL9Rd3OUb8QGaDuskTAfmtUwg/qn/c5bvjyAfwFM/oapatA5Ws0rqtidQwDZ68qO/9CmNTxE9vjAR75tzGNaw20kfoE/m5gSwQ==
     #- FOO=BAR
@@ -51,11 +52,11 @@ build:
    # image_name: drydock/u12nod
     #image_tag: prod
     #pull: true  
-  #pre_ci_boot:
-   # image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
-   # image_tag: test
-   # pull: true
-   # options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+  pre_ci_boot:
+    image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
+    image_tag: test
+    pull: true
+    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
   #post_ci:
     #- docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
