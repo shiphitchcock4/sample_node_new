@@ -18,9 +18,9 @@ env:
    
    # - FO%&O=fizz
   matrix:
-   # - secure: AEIwEwAfYL+eXw+jfcRo3D5A4joJGeuoN0uVK7jt06ysgJyIdMReSP3UOvPcp5AaI5ZzGz9TWeSMJPgu7tJL5kSq1cnOpRcc2JrJKJFVQOWRaS1CfyNRjOA8UsU+zClHRcw0KVt74xeFubYVqRVknHaM4N1+GbMHrk1suFDmvWJB++cWQghvCI/nUe6JjH55XfCRjGCYFocmntyGTSjBq+AvEnE9umXY6fsxlzEP0w9WUhARRbz7NpYkVaTeIeUsyUFHvNWnW+qZd5NvzDUF5Y6iPrjj0aiO8yMgP32qx0hHsBHLuZ0d8H6yqgssjwAdIGCkXXBejYSCPg8CoozQmA==
+    - secure: AEIwEwAfYL+eXw+jfcRo3D5A4joJGeuoN0uVK7jt06ysgJyIdMReSP3UOvPcp5AaI5ZzGz9TWeSMJPgu7tJL5kSq1cnOpRcc2JrJKJFVQOWRaS1CfyNRjOA8UsU+zClHRcw0KVt74xeFubYVqRVknHaM4N1+GbMHrk1suFDmvWJB++cWQghvCI/nUe6JjH55XfCRjGCYFocmntyGTSjBq+AvEnE9umXY6fsxlzEP0w9WUhARRbz7NpYkVaTeIeUsyUFHvNWnW+qZd5NvzDUF5Y6iPrjj0aiO8yMgP32qx0hHsBHLuZ0d8H6yqgssjwAdIGCkXXBejYSCPg8CoozQmA==
   
-    #- GOO=GUBU
+    - GOO=GUBU
     
     #- FO&O=FUBU
     #- sre=sru
