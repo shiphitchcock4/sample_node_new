@@ -31,7 +31,7 @@ matrix:
     ##    - bar=foo
      #   - new=ni
    #   env: ship@=test
-   - node_js: "0.10"
+    - node_js: "0.10"
     #  env: j3=ui
     #  env: ship@=test
  # allow_failures:
