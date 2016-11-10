@@ -12,17 +12,16 @@ env:
   global:
     - bar=foo 
     - j1=ni
-    - secure: ghpATQa/XThbnfoKWUTXx+ercYz8LMqtOJrBlWrWBn04uSdgtj7FghgTbPQ4FxRZ/WjuVvDlHyZd5OpHm/75GvzzvStaaTT0ukMpl9SgsWvfdvjM7iWssDnEHarAhpczrnyvUzaEjs9xTITs4jWYP06ler9jKzv/84X/mrVLHfLynmNf8kAj3LsycSy4B66cqioHaK5MZIGvt4V/MMJ00+CTBVUTIcmCCHHWEFC5qMkrpe/izlsnUrSsra7EwL9w/E8gO/VMLHZbsCRe0e7beK75e+dEiFmIuDAa4PEPUA/naFN8xdCQzH2QNTXoR5PTp8apgzkAkifADRZQ+2EtTA==
-    - secure: D29DPXz3jVqjCksttUiw0ftB2ZNJEfeaOP91GlI4/+0KlyNVQATXN7DbnhxQd52bDDtV6lVw3OWvVs+3Cg+FNSbRet8uJLLvlAzKMFpF+kWNNDVQgV0zMt48ThTyLCrLABHkMOJCHk5OyZni2C0vZZ7q0x1p40t1d21zLYt36p7+u1jSw5FEM5QMJ7dc6GQjiaaXA20tWkIjrLisz+Yha4HmnjC3elKua4cNi1LDoMLzUsq0U+NLQfxQap5RHbkaj1a1a5DFLW4Q5I6JKnw1Q6m3q2d6t9REip+wDOPYA5F48kGlVxypA4mn0EORc4QjsoxP0Tl6LWeLndvjqoDuiw==
-    - secure: HE+yxcRg4t0qyFQtj0rc2bml/UenKvk+7cssN8sS/8ZUFvqmR1gtl97u6CFbh9Z3nsHy1ptL/+s17WgTTmMHC52ZYPv9ES8LwSAp3dHuK8A7iyzut5SBY+DsKFvY3AJ+PyGlN3vxajbzxexSDtPeWLRAiTyR2NihnqX0XJFMGLbHhcoAAdDNhUumv497xH/BLHP9CT9R7iy2N4aitwtNx7padOaMM8k/rm4rTM8HCvgm5E2TefDlCL9Rd3OUb8QGaDuskTAfmtUwg/qn/c5bvjyAfwFM/oapatA5Ws0rqtidQwDZ68qO/9CmNTxE9vjAR75tzGNaw20kfoE/m5gSwQ==
-    #- FOO=BAR
+    - secure: p/CMYAgLVHcb41NW3ZjXtO4PhO5K7V/vsB7WKs4ZwCO3et412JjxJNpzGGGD2zteYrP58PQTrdj8PZ+wCmbHwl4iYLVjv0e5JIvbU5CLhTxcGFxtaTHTN11fYvqS4viG9AYghcnG0cVeRYC6OTu0QPS1nXKq9NIoiiQSQ5Mlm5BEjwzTo6PRroNQ7ruErnb1rEgaZ9yaVpmasDhC8dhissL4XXQkG6Zp8X2Tnvec0TBNnjiD9y2lL8+0gmQcVDWvgL/IppAk+i+T8iHBcHTgwg44wtiyEnrZV4HJQZfgBDSIw/atQyzPwwBqtAdo1z2uCkJNwAxni+a7TH1BtQ5bVg==
+    - secure: lyEkBI0JYvWtj1UZpCREAUBLzrCPEpkG1pbuiW8rnb7yzdxb0BsyKXxJ9B5Xa5JhCOlT/AJAyOb1ALDsr5eSeXLcHTK/lRGpTcmvBxuWsBZG4dCAQduk1Oyld3R8ipKvVBMISlSwN4G+n3P4vTW8BdScuDfklxsZyrnS8M8XRXcf9N7/pxy0FfXXgQRyl8f08pgV2BdMZ7RKhBPGgvrF3Rh6fIXhN1BGZIifT5Bj44mEPCKvOh9xmRInc7ZYIVnCTcSRu3nHLxbqPCI59Elq6AyzASQf1LbG8g3C/DRMpKtXWuf6+Xoe1lMxeoCL8uI7MrF6cL4jNodhdgj+kegdWA==
     #- TOO=["TUBU"]
    
    # - FO%&O=fizz
   matrix:
+   # - secure: AEIwEwAfYL+eXw+jfcRo3D5A4joJGeuoN0uVK7jt06ysgJyIdMReSP3UOvPcp5AaI5ZzGz9TWeSMJPgu7tJL5kSq1cnOpRcc2JrJKJFVQOWRaS1CfyNRjOA8UsU+zClHRcw0KVt74xeFubYVqRVknHaM4N1+GbMHrk1suFDmvWJB++cWQghvCI/nUe6JjH55XfCRjGCYFocmntyGTSjBq+AvEnE9umXY6fsxlzEP0w9WUhARRbz7NpYkVaTeIeUsyUFHvNWnW+qZd5NvzDUF5Y6iPrjj0aiO8yMgP32qx0hHsBHLuZ0d8H6yqgssjwAdIGCkXXBejYSCPg8CoozQmA==
   
     #- GOO=GUBU
-    #- secure: ZiVXA9z/7gCZPnN+sN/g+v7x6Y8fGfnku+iN6oGzeGA04TJWPf1hUYMhd1oMCTQ5VH00nbgD5jj8OnwfanbVtZGypE0oafMwJ4fKIPo/1Lwv/0uOMitvc31xLORFmjUWQeLIPnXiFyp9el9WXg27Oc+/S+8f/vZqibM75oJS/tCeLhyWfzgcZsxg+x/reUrl+iUMrwjo1GNyqoYBMrE3WwMttsSrWILhqbRB9FjAp1zIyqVoPpR2ipc0S8zvs+2e9mZ2nHBv5QUi88O01lSaGVcBRAYHGW4i/ugmNgTJgLmNyEbTYkeAcMIQIKt/zeRQlopG2KdqTbcuMM1j68Exkw==
+    
     #- FO&O=FUBU
     #- sre=sru
 #matrix:    
