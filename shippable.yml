@@ -24,9 +24,9 @@ env:
     
     #- FO&O=FUBU
     #- sre=sru
-#matrix:    
- # include:
-  #  - node_js: "0.12"
+matrix:    
+  include:
+    - node_js: "65784"
    #   env: 
     #    - bar=foo
     #    - new=ni
