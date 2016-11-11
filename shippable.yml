@@ -11,8 +11,8 @@ node_js:
   #- 5.0
 env:
   global:
-   # - bar=foo 
-   # - j1=ni
+    - bar=foo 
+    - j1=ni
    # - secure: p/CMYAgLVHcb41NW3ZjXtO4PhO5K7V/vsB7WKs4ZwCO3et412JjxJNpzGGGD2zteYrP58PQTrdj8PZ+wCmbHwl4iYLVjv0e5JIvbU5CLhTxcGFxtaTHTN11fYvqS4viG9AYghcnG0cVeRYC6OTu0QPS1nXKq9NIoiiQSQ5Mlm5BEjwzTo6PRroNQ7ruErnb1rEgaZ9yaVpmasDhC8dhissL4XXQkG6Zp8X2Tnvec0TBNnjiD9y2lL8+0gmQcVDWvgL/IppAk+i+T8iHBcHTgwg44wtiyEnrZV4HJQZfgBDSIw/atQyzPwwBqtAdo1z2uCkJNwAxni+a7TH1BtQ5bVg==
    # - secure: lyEkBI0JYvWtj1UZpCREAUBLzrCPEpkG1pbuiW8rnb7yzdxb0BsyKXxJ9B5Xa5JhCOlT/AJAyOb1ALDsr5eSeXLcHTK/lRGpTcmvBxuWsBZG4dCAQduk1Oyld3R8ipKvVBMISlSwN4G+n3P4vTW8BdScuDfklxsZyrnS8M8XRXcf9N7/pxy0FfXXgQRyl8f08pgV2BdMZ7RKhBPGgvrF3Rh6fIXhN1BGZIifT5Bj44mEPCKvOh9xmRInc7ZYIVnCTcSRu3nHLxbqPCI59Elq6AyzASQf1LbG8g3C/DRMpKtXWuf6+Xoe1lMxeoCL8uI7MrF6cL4jNodhdgj+kegdWA==
     #- TOO=["TUBU"]
@@ -25,9 +25,9 @@ env:
     
     #- FO&O=FUBU
     #- sre=sru
-matrix:    
-  include:
-    - node_js: "65784"
+#matrix:    
+ # include:
+  #  - node_js: "0.10"
    #   env: 
     #    - bar=foo
     #    - new=ni
@@ -52,15 +52,15 @@ build:
    # image_name: drydock/u12nod
    # image_tag: prod
    # pull: true  
-  pre_ci_boot:
-    image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
-    image_tag: test
-    pull: true
-    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+  #pre_ci_boot:
+   # image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
+   # image_tag: test
+   # pull: true
+   # options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
-  post_ci:
-    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
-    - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
+ # post_ci:
+  #  - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+  #  - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
 
     
   ci:
