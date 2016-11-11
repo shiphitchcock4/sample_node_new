@@ -3,7 +3,7 @@ language: node_js
 node_js:
  # - 0.10
   #- 0.12
-  - ree 
+  #- ree 
   - 4.2.3
   #- iojs-v1
   #- iojs-v2
