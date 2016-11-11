@@ -29,10 +29,10 @@ matrix:
     - node_js: "0.12"
       env: 
         - bar=foo
-     #   - new=ni
+        - new=ni
     #  env: ship@=test
-  #  - node_js: "0.10"
-    #  env: j3=ui
+    - node_js: "0.10"
+      env: j3=ui
    #   env: ship@=test
   #allow_failures:
    # - node_js: 0.10
@@ -44,8 +44,8 @@ matrix:
   
   
 build:
-  pre_ci:
-    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+  #pre_ci:
+  #  - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
 
   #pre_ci_boot:
    # image_name: drydock/u12nod
@@ -57,9 +57,9 @@ build:
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
-  post_ci:
+  #post_ci:
     #- docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
-    - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
+   # - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
 
     
   ci:
