@@ -30,13 +30,13 @@ matrix:
    #   env: 
     ##    - bar=foo
      #   - new=ni
-      env: ship@=test
+    #  env: ship@=test
   #  - node_js: "0.10"
     #  env: j3=ui
    #   env: ship@=test
-  allow_failures:
-    - node_js: 0.10
-    - node_js: 0.12
+  #allow_failures:
+   # - node_js: 0.10
+   # - node_js: 0.12
 #branches:
  # only:
    # - branch
