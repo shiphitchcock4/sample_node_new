@@ -9,17 +9,15 @@ node_js:
  # - iojs-v2   
   #- iojs-v3 
   
-
+env:
+  - BUILD_TAG=latest
+  - BUILD_TAG=prod
   
-build:  
-  pre_ci:
-    - echo "Good morning 2"
-    - echo "testing"
-    - export HELLO_IMAGE="kanthchandra/sample_node"
-    - export HELLO_PULL=true
-    - export HELLO_OPTS="--privileged=true --net=bridge -e YO=helloman -e BOO=false"
-
-  pre_ci_boot: "kanthchandra/sample_node"
+build:
+  pre_ci_boot:     
+    image_name: drydock/u12nod 
+    image_tag: $BUILD_TAG
+    pull: true
   ci: 
     - node --version
     #- sleep 9m
