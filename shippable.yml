@@ -11,7 +11,9 @@ node_js:
   
 
   
-build:     
+build:  
+  pre_ci:
+    - echo "this is pr-ci"
   ci: 
     - node --version
     #- sleep 9m
