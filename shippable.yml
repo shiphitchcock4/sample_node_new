@@ -16,10 +16,10 @@ env:
 build:
   #pre_ci:
    # - echo "this is pr-ci"
-  pre_ci_boot:     
-    image_name: drydock/u12nod 
-    image_tag: $BUILD_TAG
-    pull: true
+  #pre_ci_boot:     
+    #image_name: drydock/u12nod 
+    #image_tag: $BUILD_TAG
+    #pull: true
   ci: 
     - node --version
     #- sleep 9m
