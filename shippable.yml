@@ -2,25 +2,62 @@ language: node_js
 
 # Version number
 node_js:
+
   #- 0.10
   - 0.12
   #- 4.2.1 
 #  - iojs-v1       
  # - iojs-v2   
   #- iojs-v3 
+
+ 
+
   
-env:
-  - BUILD_TAG=latest
-  - BUILD_TAG=prod
+#branches: 
+#  only:
+ #   - master  
   
 build:
   #pre_ci:
-   # - echo "this is pr-ci"
-  #pre_ci_boot:     
-    #image_name: drydock/u12nod 
-    #image_tag: $BUILD_TAG
-    #pull: true
-  ci: 
+   # - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+
+  #pre_ci_boot:
+   # image_name: drydock/u14nod
+   # image_tag: prod
+   # pull: true  
+  pre_ci_boot:
+    image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
+    image_tag: test
+    pull: true
+    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+    
+  #post_ci:
+  #  - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+   # - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
+
+    
+    
+  ci:  
     - node --version
-    #- sleep 9m
- 
+    - sleep 9m
+    - echo $FOO
+    - echo $M1
+    - echo $rc
+    - echo $rc1
+    - echo $s1
+    #- echo $SOO      
+   # - echo $FO%&O   
+    #- echo "$FO&O"
+    - echo "$foo:loo"
+    - echo $A
+    #- @3%%%&&&
+integrations:
+  hub:
+    - integrationName: ship4-docker
+      type: docker
+      
+  
+            
+  
+
+             
