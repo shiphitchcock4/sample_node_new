@@ -15,21 +15,23 @@ build:
  # pre_ci:
   #  - docker build -t=shippabledocker/shiphitchcock2_sample_node2 .
 
-  pre_ci_boot:
-    image_name: shippabledocker/shiphitchcock2_sample_node2
-    image_tag: latest
-    pull: true
-    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+ # pre_ci_boot:
+  #  image_name: shippabledocker/shiphitchcock2_sample_node2
+   # image_tag: latest
+   # pull: true
+   # options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
     
   ci:
     - node --version
     - ps -eax
     - ls -al 
+    
+  cache: true
    
     
   post_ci:
-    #- docker build -t=shippabledocker/shiphitchcock2_sample_node2 .
+    - docker build -t=shippabledocker/shiphitchcock2_sample_node2 .
     - docker push shippabledocker/shiphitchcock2_sample_node2
    # - docker push shippabledocker/shiphitchcock2_sample_node2:$BUILD_NUMBER
    # - docker tag -f shippabledocker/shiphitchcock2_sample_node2:latest shippabledocker/shiphitchcock2_sample_node2:tip
@@ -37,12 +39,9 @@ build:
 
 integrations:
   hub:
-    - integrationName: ship-docker
+    - integrationName: ship4-docker
       type: docker 
      # branches:
       #  except:
        #   - post     
      
-       
-    
-  
