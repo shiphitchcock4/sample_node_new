@@ -16,8 +16,8 @@ node_js:
  #   - master  
   
 build:
-  pre_ci:
-    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test.
+ # pre_ci:
+ #   - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
 
   #pre_ci_boot:
    # image_name: drydock/u14nod
@@ -29,9 +29,9 @@ build:
    # pull: true
    # options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
-  #post_ci:
-  #  - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
-   # - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
+  post_ci:
+    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+    - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test1
 
     
     
