@@ -51,7 +51,7 @@ build:
     #- @3%%%&&&
 integrations:
   hub:
-    - integrationName: ship4-docker1
+    - integrationName: ship4-docker
       type: docker
       
   
