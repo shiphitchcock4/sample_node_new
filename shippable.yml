@@ -4,7 +4,7 @@ language: node_js
 # Version number
 node_js:
   - 0.12
-  - 0.10
+  #- 0.10
 
 env:
  - test="latest"
@@ -26,9 +26,13 @@ build:
   ci:
     - ps -eax
     - ls -al
+    
+  post_ci:
+    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+    - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test1
 
-  post_ci:     
-    - docker push shippabledocker/hitchcock3_sample_nodetest
+ # post_ci:     
+  #  - docker push shippabledocker/hitchcock3_sample_nodetest
     
 integrations:
   hub:
