@@ -13,8 +13,8 @@ git:
    submodules: false
    
 build:
-   pre_ci:
-     - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+  pre_ci:
+    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
     
    
   pre_ci_boot:
