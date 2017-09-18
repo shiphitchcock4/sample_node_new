@@ -19,7 +19,7 @@ build:
    
   pre_ci_boot:
     image_name: drydock/u14nodall
-    image_tag: master
+    image_tag: master1213
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
