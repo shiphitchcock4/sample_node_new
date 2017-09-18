@@ -16,7 +16,8 @@ git:
    
 build:
   pre_ci:
-    - docker build -t=shippabledocker/hitchcock3_sample_nodetest .
+     - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+
    
   pre_ci_boot:
     image_name: drydock/u14nodall
