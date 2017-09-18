@@ -3,7 +3,7 @@ language: node_js
 
 # Version number
 node_js:
-  - 0.12123
+  - 0.12
 
 env:
  - test="latest"
@@ -34,5 +34,5 @@ build:
 integrations:
   hub:
  #Docker integration
-    - integrationName: ship4-docker
+    - integrationName: ship-docker
       type: docker 
