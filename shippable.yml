@@ -6,9 +6,10 @@ node_js:
   - 0.12
   - 0.10
 
-#env:
- #- test="latest"
- #- test="masterryt"
+env:
+  - test="echo one"
+  - test="abc"
+
 
 git:
    submodules: false
@@ -26,6 +27,9 @@ build:
   ci:
     - ps -eax
     - ls -al
+    
+  on_success:
+    - eval $test
     
   post_ci:
     - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
