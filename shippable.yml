@@ -1,61 +1,39 @@
+# Language setting
 language: node_js
 
 # Version number
 node_js:
-  - 0.10
- # - 0.12
-#  - 4.2.3  
-#  - iojs-v1       
- # - iojs-v2    
-  #- iojs-v3 
- 
+  - 0.12
 
-  
-#branches: 
-#  only:
- #   - master  
-  
+env:
+ - test="latest"
+ - test="masterryt"
+
+git:
+   submodules: false
+   
 build:
- # pre_ci:
- #   - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+  pre_ci:
+    - docker build -t=shippabledocker/hitchcock3_sample_nodetest .
+   
+  pre_ci_boot:
+    image_name: drydock/u14nodall
+    image_tag: $test
+    pull: true
+    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+    
+  ci:
+    - ps -eax
+    - ls -al
 
-  #pre_ci_boot:
-   # image_name: drydock/u14nod
-   # image_tag: prod
-   # pull: true  
-  #pre_ci_boot:
-   # image_name: shiphitchcock4/hitchcock4_sample_nodenewimage
-   # image_tag: test
-   # pull: true
-   # options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+  post_ci:     
+    - docker push shippabledocker/hitchcock3_sample_nodetest
     
-  post_ci:
-    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
-    - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test1
-
-    
-    
-  ci:  
-    - node --version
-   # - sleep 9m
-    - echo $FOO
-    - echo $M1
-    - echo $rc
-    - echo $rc1
-    - echo $s1
-    #- echo $SOO      
-   # - echo $FO%&O   
-    #- echo "$FO&O"
-    - echo "$foo:loo"
-    - echo $A
-    #- @3%%%&&&
 integrations:
   hub:
+ #Docker integration
     - integrationName: ship4-docker
-      type: docker
-      
-      
-      
+      type: docker 
       
       
  
