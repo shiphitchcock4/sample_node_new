@@ -5,9 +5,9 @@ language: node_js
 node_js:
   - 0.12
 
-env:
- - test="latest"
- - test="masterryt"
+#env:
+# - test="latest"
+# - test="masterryt"
 
 git:
    submodules: false
