@@ -4,18 +4,18 @@ language: node_js
 # Version number
 node_js:
   - 0.12
-  - 0.10
 
-#env:
- #- test="latest"
- #- test="masterryt"
+env:
+ - test="latest"
+ - test="masterryt"
 
 git:
    submodules: false
    
 build:
-  pre_ci:
-    - docker build -t=shippabledocker/hitchcock3_sample_nodetest .
+   pre_ci:
+     - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+    
    
   pre_ci_boot:
     image_name: drydock/u14nodall
@@ -26,19 +26,14 @@ build:
   ci:
     - ps -eax
     - ls -al
-    
-  post_ci:
-    - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
-    - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test
 
- # post_ci:     
-  #  - docker push shippabledocker/hitchcock3_sample_nodetest
+  post_ci:
+   # - docker build -t=shiphitchcock4/hitchcock4_sample_nodenewimage1:test .
+    - docker push shiphitchcock4/hitchcock4_sample_nodenewimage1:test1
     
 integrations:
   hub:
  #Docker integration
     - integrationName: ship4-docker
       type: docker 
-      
-      
  
